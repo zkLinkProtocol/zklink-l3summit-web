@@ -114,7 +114,7 @@ const Index = () => {
           Denver - 02.03.2024
         </TabItem>
       </TabWrap>
-      <Date>{`>${tab === "EthDenver" ? "EthDenver" : "DevConnect"}<`}</Date>
+      <Date>{`>${tab === "EthDenver" ? "ETHDenver" : "DevConnect"}<`}</Date>
       <Stroke data={tab === "EthDenver" ? strokeList2 : strokeList1} />
       <Location type={tab} />
     </Wrap>

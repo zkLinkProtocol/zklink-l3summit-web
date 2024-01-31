@@ -81,7 +81,12 @@ const Header = memo(() => {
         <a href="https://twitter.com/L3_Summit" target={"_blank"}>
           <TwitterIcon src={twitter} alt="twitter" />
         </a>
-        <Button href={"https://lu.ma/qoa28vqw"} target={"_blank"}>
+        <Button
+          href={"https://lu.ma/event/evt-Um0L9kcRnLHolzz"}
+          target={"_blank"}
+          data-luma-action="checkout"
+          data-luma-event-id="evt-Um0L9kcRnLHolzz"
+        >
           Join {!isMobile && "Now"}
         </Button>
       </MediaWrap>

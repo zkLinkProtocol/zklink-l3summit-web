@@ -87,11 +87,14 @@ const Adorn = styled(Image)`
     }
   }
 `;
+const Link = styled.a``;
 const Index = () => {
   return (
     <Wrap>
       <Title>Hosted by</Title>
-      <Adorn src={logo} alt={"adorn"} className={"adorn1"} />
+      <Link href={"https://zk.link/"} target={"_blank"}>
+        <Adorn src={logo} alt={"adorn"} className={"adorn1"} />
+      </Link>
       <Adorn src={adorn} alt={"adorn"} className={"adorn2"} />
       <Adorn src={adorn2} alt={"adorn"} className={"adorn3"} />
     </Wrap>

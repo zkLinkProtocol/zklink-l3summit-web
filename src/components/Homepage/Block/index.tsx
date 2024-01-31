@@ -102,7 +102,7 @@ const Index = () => {
       <InfoWrap>
         <TextWrap className={"left"}>
           <Text className={"leftTextTop"}>
-            The Leading Technical Forum Exploring Layer 3 Blockchain Solutions -
+            The Leading Technical Forum Exploring Layer 3 Blockchain Solutions.
           </Text>
           <Text className={"leftText"}>
             For Layer 3 Developers, Founders, and Layer 1&2 Scaling Enthusiasts.
@@ -124,9 +124,10 @@ const Index = () => {
           </Text>
           <Text>
             The L3 Summit brings together the world's best protocols such as
-            zkSync, Scroll, Linea, Polygon, Manta, Mantle, Kakarot, Taiko,
-            Celestia, Eigen Layer, and more, to push forward the boundaries of
-            Layer 3 innovation and break through the blockchain trilemma.
+            zkSync, Starknet, Scroll, Linea, Polygon, Manta, Mantle, Kakarot,
+            Taiko, Celestia, Eigen Layer, and more, to push forward the
+            boundaries of Layer 3 innovation and break through the blockchain
+            trilemma.
           </Text>
         </TextWrap>
       </InfoWrap>

@@ -1,9 +1,7 @@
 import React, { FC } from "react";
 import styled from "styled-components";
 import adornIcon from "@/assets/homepage/block2/adorn3.png";
-import telIcon from "@/assets/homepage/block2/tel.png";
-import picIcon from "@/assets/homepage/block2/img1.png";
-import picIcon2 from "@/assets/homepage/block2/img2.png";
+import mapIcon from "@/assets/homepage/block2/map.svg";
 import bg from "@/assets/homepage/block2/bg.png";
 import Image from "next/image";
 import { Flex, FlexCenter } from "@/styles";
@@ -118,12 +116,9 @@ const PicIcon = styled(Image)`
     height: auto;
   }
 `;
-const TelWrap = styled(Flex)``;
-const Span = styled.span`
-  color: #000;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 70px; /* 437.5% */
+const MapIcon = styled(Image)`
+  width: 30px;
+  height: auto;
 `;
 
 const Index: FC<{ type: string }> = ({ type }) => {
@@ -151,7 +146,7 @@ const Index: FC<{ type: string }> = ({ type }) => {
                       target={"_blank"}
                       className={"viewMore"}
                     >
-                      {item.urlName}
+                      <MapIcon src={mapIcon} alt={"map"} /> {item.urlName}
                     </ViewMore>
                   )}
                 </Box>
