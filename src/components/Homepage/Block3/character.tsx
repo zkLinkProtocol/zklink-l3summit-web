@@ -99,16 +99,16 @@ const Index = () => {
       {data.map((item, index) => (
         <Box
           key={index}
-          href={item.TwitterHandler}
+          href={item.twitterHandler}
           target={"_blank"}
           className={"normal"}
         >
           <AvatarBox>
-            <Avatar src={item.Avatar} alt={"vince"} />
+            <Avatar src={item.avatar} alt={"avatar"} />
           </AvatarBox>
-          <Name>{item.Name}</Name>
-          <Span>{item.Project}</Span>
-          <Span>{item.Title}</Span>
+          <Name>{item.name}</Name>
+          <Span>{item.project}</Span>
+          <Span>{item.title}</Span>
         </Box>
       ))}
     </Wrap>

@@ -46,7 +46,8 @@ const Info = styled.div`
 
   &.bgBlack,
   &.bgBlue,
-  &.bgOrange {
+  &.bgOrange,
+  &.bgGrey {
     border: none;
   }
 
@@ -60,6 +61,10 @@ const Info = styled.div`
 
   &.bgOrange {
     background-color: #ff8446;
+  }
+
+  &.bgGrey {
+    background-color: #c4d0d5;
   }
 
   &.adorn1::before {
@@ -117,6 +122,13 @@ const InfoCenter = styled.div`
     font-weight: 700;
   }
 `;
+
+const InfoBottomWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 const InfoBottom = styled.div`
   color: #494949;
   font-size: 14px;
@@ -141,8 +153,15 @@ const Index = ({ data }: { data: StrokeItem[] }) => {
                 {item.infoCenterText}
               </InfoCenter>
             )}
-            {item.infoBottomText && (
-              <InfoBottom>{item.infoBottomText}</InfoBottom>
+            {(item.infoBottomLText || item.infoBottomRText) && (
+              <InfoBottomWrap>
+                {item.infoBottomLText ? (
+                  <InfoBottom> {item.infoBottomLText}</InfoBottom>
+                ) : null}
+                {item.infoBottomRText ? (
+                  <InfoBottom> {item.infoBottomRText}</InfoBottom>
+                ) : null}
+              </InfoBottomWrap>
             )}
           </Info>
         </Box>

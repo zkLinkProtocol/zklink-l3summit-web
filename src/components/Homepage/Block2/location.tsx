@@ -63,7 +63,7 @@ const BoxLeft = styled.div`
     flex-direction: column;
   }
 `;
-const BoxRight = styled.div`
+const BoxRight = styled(BoxLeft)`
   &.bottom {
     display: flex;
     flex-direction: column;

@@ -4,6 +4,7 @@ import { Flex, FlexCenter } from "@/styles";
 import Stroke from "@/components/Homepage/Block2/stroke";
 import Location from "@/components/Homepage/Block2/location";
 import { strokeList1, strokeList2 } from "@/components/Homepage/Block2/data";
+import Partners from "@/components/Homepage/Block2/partners";
 
 type Tab = "Istanbul" | "EthDenver";
 
@@ -117,6 +118,7 @@ const Index = () => {
       <Date>{`>${tab === "EthDenver" ? "ETHDenver" : "DevConnect"}<`}</Date>
       <Stroke data={tab === "EthDenver" ? strokeList2 : strokeList1} />
       <Location type={tab} />
+      {tab === "EthDenver" ? <Partners /> : null}
     </Wrap>
   );
 };

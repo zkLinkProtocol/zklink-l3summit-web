@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import bg from "@/assets/homepage/footer/bg.png";
-import logo from "@/assets/homepage/footer/icon.png";
+import qed from "@/assets/qed.png";
+import zklink from "@/assets/zklink.png";
+
 import adorn from "@/assets/homepage/footer/adorn.png";
 import adorn2 from "@/assets/homepage/footer/adorn2.png";
 
@@ -51,9 +53,9 @@ const Adorn = styled(Image)`
   &.adorn1 {
     position: relative;
     z-index: 1;
-    width: 230px;
-    height: 66px;
-    margin-top: 33px;
+    width: fit-content;
+    height: auto;
+    margin: 33px 68px 0;
   }
 
   &.adorn2 {
@@ -73,28 +75,35 @@ const Adorn = styled(Image)`
   }
 
   ${(props) => props.theme.breakpoints.down("sm")} {
-    &.adorn1 {
-      position: relative;
-      z-index: 1;
-      width: 161px;
-      height: auto;
-      margin-top: 23px;
-    }
-
     &.adorn2,
     &.adorn3 {
       display: none;
     }
   }
 `;
+const LinkWrap = styled.div`
+  display: flex;
+  transform: scale(0.333);
+
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    transform: scale(0.2);
+  }
+`;
+
 const Link = styled.a``;
 const Index = () => {
   return (
     <Wrap>
       <Title>Hosted by</Title>
-      <Link href={"https://zk.link/"} target={"_blank"}>
-        <Adorn src={logo} alt={"adorn"} className={"adorn1"} />
-      </Link>
+      <LinkWrap>
+        <Link href={"https://zk.link/"} target={"_blank"}>
+          <Adorn src={zklink} alt={"logo"} className={"adorn1"} />
+        </Link>
+        <Link href={"https://qedprotocol.com/"} target={"_blank"}>
+          <Adorn src={qed} alt={"logo"} className={"adorn1"} />
+        </Link>
+      </LinkWrap>
+
       <Adorn src={adorn} alt={"adorn"} className={"adorn2"} />
       <Adorn src={adorn2} alt={"adorn"} className={"adorn3"} />
     </Wrap>

@@ -5,6 +5,8 @@ import Image from "next/image";
 import bg from "../../../assets/homepage/header/banner.png";
 import adorn1 from "../../../assets/homepage/header/adornLeft.svg";
 import adorn2 from "../../../assets/homepage/header/adornRight.svg";
+import zk from "../../../assets/zklink.png";
+import qed from "../../../assets/qed.png";
 
 const Wrap = styled(FlexCenter)`
   position: relative;
@@ -71,12 +73,54 @@ const Adorn = styled(Image)`
     }
   }
 `;
+const IconWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    flex-direction: column;
+  }
+`;
+const Text = styled.p`
+  color: #fff;
+  font-size: 28.286px;
+  font-weight: 700;
+  line-height: 55px; /* 194.444% */
+`;
+
+const Logo = styled(Image)`
+  width: auto;
+
+  &.zk {
+    height: 34.5px;
+    margin: 0 31px;
+  }
+
+  &.qed {
+    height: 29.8px;
+  }
+
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    &.zk {
+      margin: 31px;
+    }
+  }
+`;
+
 const Index = () => {
   return (
     <Wrap>
       <InfoWrap>
         <Title>L3 Summit</Title>
         <Span>Denver</Span>
+        <IconWrap>
+          <Text>Hosted by:</Text>
+          <Logo src={zk} className={"zk"} alt="zk" />
+          <Logo src={qed} className={"qed"} alt="qed" />
+        </IconWrap>
       </InfoWrap>
       <Adorn src={adorn1} alt="adorn" className={"left"} />
       <Adorn src={adorn2} alt="adorn2" className={"right"} />
