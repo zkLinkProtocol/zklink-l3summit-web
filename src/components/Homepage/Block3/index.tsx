@@ -92,7 +92,7 @@ const Index = () => {
       <DappPic src={dappPicg} alt={"dapp"} />
       <Title>Past Speakers</Title>
       <Character />
-      <P>More speakers coming soon</P>
+      <P>More speakers coming soon !</P>
 
       <Adorn src={adorn} alt={"adorn"} className={"left"} />
       <Adorn src={adorn} alt={"adorn"} className={"right"} />

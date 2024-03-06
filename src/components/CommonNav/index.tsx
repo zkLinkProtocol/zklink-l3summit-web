@@ -41,7 +41,7 @@ const MediaWrap = styled.div`
 `;
 const TwitterIcon = styled(Image)`
   width: 44px;
-  height: 32px;
+  height: auto;
   margin-right: 28px;
 
   ${(props) => props.theme.breakpoints.down("sm")} {

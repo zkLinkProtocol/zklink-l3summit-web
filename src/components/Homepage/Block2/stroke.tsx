@@ -143,16 +143,16 @@ const Index = ({ data }: { data: StrokeItem[] }) => {
         <Box key={item.time}>
           <Time>{item.time}</Time>
           <Info className={item.infoClass || ""}>
-            {item.infoTopText && (
+            {item.infoTopText ? (
               <InfoTop className={item.infoTopClass || ""}>
                 {item.infoTopText}
               </InfoTop>
-            )}
-            {item.infoCenterText && (
+            ) : null}
+            {item.infoCenterText ? (
               <InfoCenter className={item.infoCenterClass || ""}>
                 {item.infoCenterText}
               </InfoCenter>
-            )}
+            ) : null}
             {(item.infoBottomLText || item.infoBottomRText) && (
               <InfoBottomWrap>
                 {item.infoBottomLText ? (

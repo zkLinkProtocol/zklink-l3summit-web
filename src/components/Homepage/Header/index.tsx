@@ -51,25 +51,25 @@ const Adorn = styled(Image)`
     left: 0;
     bottom: 0;
     width: 208px;
-    height: 208px;
+    height: auto;
   }
 
   &.right {
     right: 0;
     bottom: 0;
     width: 311px;
-    height: 265px;
+    height: auto;
   }
 
   ${(props) => props.theme.breakpoints.down("sm")} {
     &.left {
       width: 83px;
-      height: 83px;
+      height: auto;
     }
 
     &.right {
       width: 124px;
-      height: 106px;
+      height: auto;
     }
   }
 `;

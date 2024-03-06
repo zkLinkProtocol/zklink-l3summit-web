@@ -3,10 +3,7 @@ import AjitKumarTripathi from "@/assets/homepage/block3/Ajit Kumar Tripathi.png"
 import AlexMukhin from "@/assets/homepage/block3/Alex Mukhin.png";
 import AnnaShakola from "@/assets/homepage/block3/Anna Shakola.png";
 import AnshuAgrawal from "@/assets/homepage/block3/Anshu Agrawal.png";
-import AnthonyRose from "@/assets/homepage/block3/Anthony Rose.png";
 import ArunDevabhaktuni from "@/assets/homepage/block3/Arun Devabhaktuni.png";
-import AurelienGodderis from "@/assets/homepage/block3/Aurelien Godderis.png";
-import AndrewCavanaugh from "@/assets/homepage/block3/Andrew Cavanaugh.png";
 
 import BrandonKase from "@/assets/homepage/block3/Brandon Kase.png";
 
@@ -51,10 +48,7 @@ import MarcoMonaco from "@/assets/homepage/block3/Marco Monaco.png";
 
 import Raza from "@/assets/homepage/block3/Raza.png";
 
-import SreeramKannan from "@/assets/homepage/block3/Sreeram Kannan.png";
-
 import TomaszWojewoda from "@/assets/homepage/block3/Tomasz Wojewoda.png";
-import TroyZhou from "@/assets/homepage/block3/Troy Zhou.png";
 
 import vince from "@/assets/homepage/block3/vince.png";
 
@@ -120,27 +114,6 @@ export const data: Speaker[] = [
     twitterHandler: "https://twitter.com/anshuagrawal_",
   },
   {
-    avatar: AndrewCavanaugh,
-    name: "Andrew Cavanaugh",
-    title: "Co-Founder",
-    project: "The Rollup",
-    twitterHandler: "https://x.com/ayyyeandy?s=21&t=PiksI7CyEOiNANwnP01ldA",
-  },
-  {
-    avatar: AurelienGodderis,
-    name: "Aurelien Godderis",
-    title: "Founder",
-    project: "Cometh",
-    twitterHandler: "https://x.com/0relien__?s=21",
-  },
-  {
-    avatar: SreeramKannan,
-    name: "Sreeram Kannan",
-    title: "CEO",
-    project: "EigenLayer",
-    twitterHandler: "https://twitter.com/sreeramkannan",
-  },
-  {
     avatar: JimmyYin,
     name: "Jimmy Yin",
     title: "CEO",
@@ -199,7 +172,7 @@ export const data: Speaker[] = [
   {
     avatar: LouisGuthmann,
     name: "Louis Guthmann",
-    title: "Head of Ecosystem",
+    title: "Head of Product / Market Strategy",
     project: "Starkware",
     twitterHandler: "https://twitter.com/GuthL",
   },
@@ -253,18 +226,11 @@ export const data: Speaker[] = [
     twitterHandler: "https://twitter.com/marcomonaco83",
   },
   {
-    avatar: AnthonyRose,
-    name: "Anthony Rose",
-    title: "SVP of Engineering",
+    avatar: KalmanLajko,
+    name: "Kalman Lajko",
+    title: "",
     project: "zkSync",
-    twitterHandler: "https://twitter.com/anthonykrose",
-  },
-  {
-    avatar: TroyZhou,
-    name: "Troy Zhou",
-    title: "Senior BD Manager",
-    project: "OKX",
-    twitterHandler: "https://twitter.com/TroyZhou0127",
+    twitterHandler: "https://twitter.com/LajkoKalman",
   },
   {
     avatar: LucaDonno,
@@ -296,94 +262,87 @@ export const data: Speaker[] = [
   },
   {
     avatar: DiegoFerrer,
-    name: "diego ferrer",
-    title: "solution engineer",
-    project: "celestia",
+    name: "Diego Ferrer",
+    title: "Solution Engineer",
+    project: "Celestia",
     twitterHandler: "https://twitter.com/dferrersan",
   },
   {
     avatar: FrancescoAndreoli,
-    name: "francesco andreoli",
-    title: "devrel",
-    project: "consensys",
+    name: "Francesco Andreoli",
+    title: "Devrel",
+    project: "Consensys",
     twitterHandler: "https://twitter.com/francescoswiss",
   },
   {
     avatar: GregEdison,
-    name: "greg edison",
-    title: "core developer",
-    project: "kakarot",
+    name: "Greg Edison",
+    title: "Core Developer",
+    project: "Kakarot",
     twitterHandler: "https://twitter.com/greged93",
   },
   {
     avatar: AjitKumarTripathi,
-    name: "ajit kumar tripathi",
-    title: "strategic advisor",
-    project: "polygon",
+    name: "Ajit Kumar Tripathi",
+    title: "Strategic Advisor",
+    project: "Polygon",
     twitterHandler: "https://twitter.com/chainyoda",
   },
   {
     avatar: Raza,
-    name: "raza",
-    title: "devrel",
-    project: "scroll",
+    name: "Raza",
+    title: "Devrel",
+    project: "Scroll",
     twitterHandler: "https://twitter.com/razacodes",
   },
   {
     avatar: DavidWeisiger,
-    name: "david weisiger",
-    title: "head of devrel",
-    project: "taiko",
+    name: "David Weisiger",
+    title: "Head of Devrel",
+    project: "Taiko",
     twitterHandler: "https://twitter.com/indraynor",
   },
   {
     avatar: Lim,
-    name: "lim keng hin",
-    title: "devrel",
-    project: "taiko",
+    name: "Lim Keng Hin",
+    title: "Devrel",
+    project: "Taiko",
     twitterHandler: "https://twitter.com/zK_enk",
   },
 
   {
-    avatar: KalmanLajko,
-    name: "kalman lajko",
-    title: "engineer",
-    project: "zkSync",
-    twitterHandler: "https://twitter.com/LajkoKalman",
-  },
-  {
     avatar: VyasKrishnan,
-    name: "vyas krishnan",
-    title: "product strategy",
-    project: "eigen layer",
+    name: "Vyas Krishnan",
+    title: "Product Strategy",
+    project: "Eigen Layer",
     twitterHandler: "https://twitter.com/vyas_krishnan",
   },
   {
     avatar: TomaszWojewoda,
-    name: "tomasz wojewoda",
-    title: "head of business development",
-    project: "BNB chain",
+    name: "Tomasz Wojewoda",
+    title: "Head of Business Development",
+    project: "BNB Chain",
     twitterHandler: "https://twitter.com/Twojewoda",
   },
   {
     avatar: AFK,
     name: "AFK",
-    title: "senior developer",
-    project: "mantle",
+    title: "Senior Developer",
+    project: "Mantle",
     twitterHandler: "https://twitter.com/afk0b?lang=en",
   },
   {
     avatar: AnnaShakola,
-    name: "anna shakola",
-    title: "head of BD",
-    project: "cointelegraph",
+    name: "Anna Shakola",
+    title: "Head of BD",
+    project: "Cointelegraph",
     twitterHandler: "https://twitter.com/anna_shakola",
   },
   {
     avatar: AlexMukhin,
-    name: "alex mukhin",
-    title: "co-founder",
-    project: "cryptomeria capita",
+    name: "Alex Mukhin",
+    title: "Co-Founder",
+    project: "Cryptomeria Capita",
     twitterHandler: "https://twitter.com/alex__mcl",
   },
 ];

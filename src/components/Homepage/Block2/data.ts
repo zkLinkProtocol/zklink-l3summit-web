@@ -225,7 +225,7 @@ export const strokeList2: StrokeItem[] = [
     infoTopText: "Panel",
     infoCenterText:
       "Developing Decentralized Applications on Layer 3: A Developer's Perspective",
-    infoBottomLText: "Cometh, zkcandy, LogX, ParallelFi",
+    infoBottomLText: "zkcandy, LogX",
     infoBottomRText: "Moderated by: OKX",
     infoClass: "adorn2",
     infoTopClass: "panel",

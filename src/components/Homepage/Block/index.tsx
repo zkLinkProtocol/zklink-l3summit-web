@@ -110,10 +110,10 @@ const Index = () => {
         </TextWrap>
         <TextWrap>
           <Text>
-            <Span>L3 Summit: </Span> Denver Edition is a zkLink-initiated event
-            series that educates, amplifies, and shares research about the
-            current status of Layer 3 development from the world's leading Layer
-            1 and Layer 2 blockchain protocols.
+            <Span>L3 Summit </Span> is a zkLink-initiated event series that
+            educates, amplifies, and shares research about the current status of
+            Layer 3 development from the world's leading Layer 1 and Layer 2
+            blockchain protocols.
           </Text>
           <Text>
             Layer 3s are third layers built on top of Ethereum Layer 2 Rollups
