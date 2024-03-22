@@ -20,7 +20,7 @@ const Wrap = styled(FlexCenter)`
 `;
 const InfoWrap = styled(Flex)`
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 `;
 const Title = styled.h3`
   color: #fff;
@@ -33,7 +33,7 @@ const Title = styled.h3`
   }
 `;
 const Span = styled.span`
-  margin-top: 74px;
+  margin-top: 98px;
   color: #fff;
   font-size: 56px;
   font-weight: 400;
@@ -78,7 +78,7 @@ const IconWrap = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 60px;
+  margin-bottom: 104px;
 
   ${(props) => props.theme.breakpoints.down("sm")} {
     flex-direction: column;
@@ -109,18 +109,39 @@ const Logo = styled(Image)`
     }
   }
 `;
+const Button = styled.a`
+  max-width: 308px;
+  margin-top: 95px;
+  padding: 14px 47px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 32px;
+  background-color: #51cfff;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #8cd7fb;
+  }
+
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    margin: 19px 38px;
+  }
+`;
 
 const Index = () => {
   return (
     <Wrap>
       <InfoWrap>
-        <Title>L3 Summit</Title>
-        <Span>Denver</Span>
         <IconWrap>
           <Text>Hosted by:</Text>
           <Logo src={zk} className={"zk"} alt="zk" />
-          <Logo src={qed} className={"qed"} alt="qed" />
         </IconWrap>
+        <Title>L3 Summit</Title>
+        <Span>Dubai</Span>
+        <Button href={"https://forms.gle/CfMYKp7nYDTB2me97"} target={"_blank"}>
+          Become A Speaker
+        </Button>
       </InfoWrap>
       <Adorn src={adorn1} alt="adorn" className={"left"} />
       <Adorn src={adorn2} alt="adorn2" className={"right"} />
