@@ -82,6 +82,7 @@ const IconWrap = styled.div`
 
   ${(props) => props.theme.breakpoints.down("sm")} {
     flex-direction: column;
+    margin-bottom: 10px;
   }
 `;
 const Text = styled.p`
@@ -109,9 +110,21 @@ const Logo = styled(Image)`
     }
   }
 `;
+
+const ButtonWrap = styled.div`
+  margin-top: 95px;
+  display: flex;
+  flex-wrap: wrap;
+
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    justify-content: center;
+    margin-top: 0;
+  }
+`;
+
 const Button = styled.a`
   max-width: 308px;
-  margin-top: 95px;
+  margin: 0 10px;
   padding: 14px 47px;
   color: #fff;
   font-size: 24px;
@@ -125,7 +138,7 @@ const Button = styled.a`
   }
 
   ${(props) => props.theme.breakpoints.down("sm")} {
-    margin: 19px 38px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -139,9 +152,22 @@ const Index = () => {
         </IconWrap>
         <Title>L3 Summit</Title>
         <Span>Dubai</Span>
-        <Button href={"https://forms.gle/CfMYKp7nYDTB2me97"} target={"_blank"}>
-          Become A Speaker
-        </Button>
+        <ButtonWrap>
+          <Button
+            href={"https://forms.gle/CfMYKp7nYDTB2me97"}
+            target={"_blank"}
+          >
+            Apply For Speaker
+          </Button>
+          <Button
+            href={"https://lu.ma/L3Summit-Dubai"}
+            target={"_blank"}
+            data-luma-action="checkout"
+            data-luma-event-id="evt-Um0L9kcRnLHolzz"
+          >
+            Register Now
+          </Button>
+        </ButtonWrap>
       </InfoWrap>
       <Adorn src={adorn1} alt="adorn" className={"left"} />
       <Adorn src={adorn2} alt="adorn2" className={"right"} />

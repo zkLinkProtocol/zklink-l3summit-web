@@ -82,7 +82,7 @@ const Header = memo(() => {
           <TwitterIcon src={twitter} alt="twitter" />
         </a>
         <Button
-          href={"https://lu.ma/event/evt-Um0L9kcRnLHolzz"}
+          href={"https://lu.ma/L3Summit-Dubai"}
           target={"_blank"}
           data-luma-action="checkout"
           data-luma-event-id="evt-Um0L9kcRnLHolzz"
