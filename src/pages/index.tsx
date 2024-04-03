@@ -6,6 +6,8 @@ import Block2 from "@/components/Homepage/Block2";
 import Block3 from "@/components/Homepage/Block3";
 import Block4 from "@/components/Homepage/Block4";
 import Footer from "@/components/Footer";
+import Gathering from "@/components/Homepage/Gathering";
+import Promotional from "@/components/Homepage/Promotional";
 
 const Wrapper = styled.div`
   position: relative;
@@ -20,6 +22,8 @@ const Index = () => {
     <Wrapper>
       <Header />
       <Block />
+      <Promotional />
+      <Gathering />
       <Block2 />
       <Block3 />
       <Block4 />
