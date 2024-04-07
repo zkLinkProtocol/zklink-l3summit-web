@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import bg from "@/assets/homepage/footer/bg.png";
-import qed from "@/assets/qed.png";
 import zklink from "@/assets/zklink.png";
 
 import adorn from "@/assets/homepage/footer/adorn.png";
@@ -98,9 +97,6 @@ const Index = () => {
       <LinkWrap>
         <Link href={"https://zk.link/"} target={"_blank"}>
           <Adorn src={zklink} alt={"logo"} className={"adorn1"} />
-        </Link>
-        <Link href={"https://qedprotocol.com/"} target={"_blank"}>
-          <Adorn src={qed} alt={"logo"} className={"adorn1"} />
         </Link>
       </LinkWrap>
 
