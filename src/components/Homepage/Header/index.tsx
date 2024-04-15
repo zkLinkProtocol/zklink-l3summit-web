@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Flex, FlexCenter } from "@/styles";
 import Image from "next/image";
-import bg from "../../../assets/homepage/header/banner.png";
+import bg from "../../../assets/homepage/header/banner.jpeg";
 import adorn1 from "../../../assets/homepage/header/adornLeft.svg";
 import adorn2 from "../../../assets/homepage/header/adornRight.svg";
 import zk from "../../../assets/zklink.png";

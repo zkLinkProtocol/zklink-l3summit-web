@@ -8,6 +8,7 @@ import adorn from "@/assets/homepage/footer/adorn.png";
 import adorn2 from "@/assets/homepage/footer/adorn2.png";
 
 import { FlexCenter } from "@/styles";
+import Link from "next/link";
 
 const Wrap = styled(FlexCenter)`
   position: relative;
@@ -89,7 +90,6 @@ const LinkWrap = styled.div`
   }
 `;
 
-const Link = styled.a``;
 const Index = () => {
   return (
     <Wrap>
