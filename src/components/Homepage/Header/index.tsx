@@ -168,8 +168,8 @@ const Index = () => {
           </Button>
         </ButtonWrap>
       </InfoWrap>
-      <Adorn src={adorn1} alt="adorn" className={"left"} />
-      <Adorn src={adorn2} alt="adorn2" className={"right"} />
+      <Adorn src={adorn1} alt="adorn" className={"left"} priority />
+      <Adorn src={adorn2} alt="adorn2" className={"right"} priority />
     </Wrap>
   );
 };
