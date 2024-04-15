@@ -6,7 +6,6 @@ import bg from "../../../assets/homepage/header/banner.jpeg";
 import adorn1 from "../../../assets/homepage/header/adornLeft.svg";
 import adorn2 from "../../../assets/homepage/header/adornRight.svg";
 import zk from "../../../assets/zklink.png";
-import qed from "../../../assets/qed.png";
 
 const Wrap = styled(FlexCenter)`
   position: relative;

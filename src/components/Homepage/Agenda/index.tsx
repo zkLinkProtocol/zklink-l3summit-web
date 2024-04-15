@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Flex, FlexCenter } from "@/styles";
-import Stroke from "@/components/Homepage/Block2/stroke";
-import Location from "@/components/Homepage/Block2/location";
-import { strokeList1, strokeList2 } from "@/components/Homepage/Block2/data";
-import Partners from "@/components/Homepage/Block2/partners";
+import Stroke from "@/components/Homepage/Agenda/stroke";
+import Location from "@/components/Homepage/Agenda/location";
+import {
+  partnerDubai,
+  partnerEthDenver,
+  strokeList1,
+  strokeList2,
+  strokeList3,
+} from "@/components/Homepage/Agenda/data";
+import Partners from "@/components/Homepage/Agenda/partners";
 
-type Tab = "Istanbul" | "EthDenver";
+type Tab = "Istanbul" | "EthDenver" | "Dubai";
 
 const Wrap = styled(FlexCenter)`
   position: relative;
@@ -34,9 +40,6 @@ const Title = styled.h3`
     width: 265px;
     height: 25px;
     background: #51cfff;
-  }
-
-  ${(props) => props.theme.breakpoints.down("sm")} {
   }
 `;
 const TabWrap = styled(Flex)`
@@ -73,7 +76,6 @@ const TabItem = styled.span`
     line-height: normal;
   }
 `;
-
 const Date = styled.div`
   margin-bottom: 48px;
   color: #000;
@@ -88,37 +90,64 @@ const Date = styled.div`
 `;
 
 const Index = () => {
-  const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver"]);
-  const [tab, setTab] = useState<Tab>(tabs[1]);
+  const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver", "Dubai"]);
+  const [tab, setTab] = useState<Tab>(tabs[tabs.length - 1]);
   const handleClick = (value: Tab) => {
-    console.log(value);
     setTab(value);
+  };
+  const name = (val: Tab) => {
+    switch (val) {
+      case "EthDenver":
+        return { name: "ETHDenver", data: strokeList2 };
+      case "Istanbul":
+        return { name: "DevConnect", data: strokeList1 };
+      case "Dubai":
+        return { name: "Dubai", data: strokeList3 };
+    }
+  };
+  const partners = (val: Tab) => {
+    switch (val) {
+      case "EthDenver":
+        return <Partners data={partnerEthDenver} />;
+      case "Istanbul":
+        return null;
+      case "Dubai":
+        return <Partners data={partnerDubai} />;
+    }
   };
   return (
     <Wrap>
       <Title>AGENDA</Title>
       <TabWrap>
         <TabItem
-          className={tab === "EthDenver" ? "" : "action"}
+          className={tab === "Istanbul" ? "action" : ""}
           onClick={() => {
             handleClick("Istanbul");
           }}
         >
-          Istanbul - 16.11.2023
+          Istanbul <br /> 16.11.2023
         </TabItem>
         <TabItem
-          className={tab !== "EthDenver" ? "" : "action"}
+          className={tab === "EthDenver" ? "action" : ""}
           onClick={() => {
             handleClick("EthDenver");
           }}
         >
-          Denver - 02.03.2024
+          Denver <br /> 02.03.2024
+        </TabItem>
+        <TabItem
+          className={tab === "Dubai" ? "action" : ""}
+          onClick={() => {
+            handleClick("Dubai");
+          }}
+        >
+          Dubai <br /> 16.04.2024
         </TabItem>
       </TabWrap>
-      <Date>{`>${tab === "EthDenver" ? "ETHDenver" : "DevConnect"}<`}</Date>
-      <Stroke data={tab === "EthDenver" ? strokeList2 : strokeList1} />
+      <Date>{`>${name(tab).name}<`}</Date>
+      <Stroke data={name(tab).data} />
       <Location type={tab} />
-      {tab === "EthDenver" ? <Partners /> : null}
+      {partners(tab)}
     </Wrap>
   );
 };

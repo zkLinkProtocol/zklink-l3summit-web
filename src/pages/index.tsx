@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../components/Homepage/Header";
-import Block from "../components/Homepage/Block";
-import Block2 from "@/components/Homepage/Block2";
-import Block3 from "@/components/Homepage/Block3";
-import Block4 from "@/components/Homepage/Block4";
+import Introduce from "../components/Homepage/Introduce";
+import Agenda from "../components/Homepage/Agenda";
+import Leaders from "../components/Homepage/Leaders";
+import Speaker from "../components/Homepage/Speaker";
 import Footer from "@/components/Footer";
 import Gathering from "@/components/Homepage/Gathering";
 import Promotional from "@/components/Homepage/Promotional";
@@ -21,12 +21,12 @@ const Index = () => {
   return (
     <Wrapper>
       <Header />
-      <Block />
+      <Introduce />
       <Promotional />
       <Gathering />
-      <Block2 />
-      <Block3 />
-      <Block4 />
+      <Agenda />
+      <Leaders />
+      <Speaker />
       <Footer />
     </Wrapper>
   );

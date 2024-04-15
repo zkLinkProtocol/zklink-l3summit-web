@@ -1,59 +1,59 @@
-import AFK from "@/assets/homepage/block3/AFK.png";
-import AjitKumarTripathi from "@/assets/homepage/block3/Ajit Kumar Tripathi.png";
-import AlexMukhin from "@/assets/homepage/block3/Alex Mukhin.png";
-import AnnaShakola from "@/assets/homepage/block3/Anna Shakola.png";
-import AnshuAgrawal from "@/assets/homepage/block3/Anshu Agrawal.png";
-import ArunDevabhaktuni from "@/assets/homepage/block3/Arun Devabhaktuni.png";
+import AFK from "@/assets/homepage/leaders/AFK.png";
+import AjitKumarTripathi from "@/assets/homepage/leaders/Ajit Kumar Tripathi.png";
+import AlexMukhin from "@/assets/homepage/leaders/Alex Mukhin.png";
+import AnnaShakola from "@/assets/homepage/leaders/Anna Shakola.png";
+import AnshuAgrawal from "@/assets/homepage/leaders/Anshu Agrawal.png";
+import ArunDevabhaktuni from "@/assets/homepage/leaders/Arun Devabhaktuni.png";
 
-import BrandonKase from "@/assets/homepage/block3/Brandon Kase.png";
+import BrandonKase from "@/assets/homepage/leaders/Brandon Kase.png";
 
-import CarterJackFeldman from "@/assets/homepage/block3/Carter Jack Feldman.png";
-import ColtonConley from "@/assets/homepage/block3/Colton Conley.png";
-import CooperMidroni from "@/assets/homepage/block3/Cooper Midroni.png";
+import CarterJackFeldman from "@/assets/homepage/leaders/Carter Jack Feldman.png";
+import ColtonConley from "@/assets/homepage/leaders/Colton Conley.png";
+import CooperMidroni from "@/assets/homepage/leaders/Cooper Midroni.png";
 
-import DanMills from "@/assets/homepage/block3/Dan Mills.png";
-import DaniloKim from "@/assets/homepage/block3/Danilo Kim.png";
-import DavidWeisiger from "@/assets/homepage/block3/David Weisiger.png";
-import DerekChang from "@/assets/homepage/block3/Derek Chang.png";
-import DiegoFerrer from "@/assets/homepage/block3/Diego Ferrer.png";
-import DominikSchmid from "@/assets/homepage/block3/Dominik Schmid.png";
-import DZ from "@/assets/homepage/block3/DZ.png";
+import DanMills from "@/assets/homepage/leaders/Dan Mills.png";
+import DaniloKim from "@/assets/homepage/leaders/Danilo Kim.png";
+import DavidWeisiger from "@/assets/homepage/leaders/David Weisiger.png";
+import DerekChang from "@/assets/homepage/leaders/Derek Chang.png";
+import DiegoFerrer from "@/assets/homepage/leaders/Diego Ferrer.png";
+import DominikSchmid from "@/assets/homepage/leaders/Dominik Schmid.png";
+import DZ from "@/assets/homepage/leaders/DZ.png";
 
-import EllaJonas from "@/assets/homepage/block3/Ella Jonas.png";
-import EricVreeland from "@/assets/homepage/block3/Eric Vreeland.png";
+import EllaJonas from "@/assets/homepage/leaders/Ella Jonas.png";
+import EricVreeland from "@/assets/homepage/leaders/Eric Vreeland.png";
 
-import FrancescoAndreoli from "@/assets/homepage/block3/Francesco Andreoli.png";
+import FrancescoAndreoli from "@/assets/homepage/leaders/Francesco Andreoli.png";
 
-import GregEdison from "@/assets/homepage/block3/Greg Edison.png";
+import GregEdison from "@/assets/homepage/leaders/Greg Edison.png";
 
-import HaichenShen from "@/assets/homepage/block3/Haichen Shen.png";
+import HaichenShen from "@/assets/homepage/leaders/Haichen Shen.png";
 
-import IreneWu from "@/assets/homepage/block3/Irene Wu.png";
+import IreneWu from "@/assets/homepage/leaders/Irene Wu.png";
 
-import JimmyYin from "@/assets/homepage/block3/Jimmy Yin.png";
-import JoaquinMendesIzard from "@/assets/homepage/block3/Joaquin Mendes Izard.png";
-import JonnyHuang from "@/assets/homepage/block3/Jonny Huang.png";
-import JoseFabrega from "@/assets/homepage/block3/Jose Fabrega.png";
+import JimmyYin from "@/assets/homepage/leaders/Jimmy Yin.png";
+import JoaquinMendesIzard from "@/assets/homepage/leaders/Joaquin Mendes Izard.png";
+import JonnyHuang from "@/assets/homepage/leaders/Jonny Huang.png";
+import JoseFabrega from "@/assets/homepage/leaders/Jose Fabrega.png";
 
-import KalmanLajko from "@/assets/homepage/block3/Kalman Lajko.png";
-import KennyLi from "@/assets/homepage/block3/Kenny Li.png";
-import KinWaiLau from "@/assets/homepage/block3/Kin Wai Lau.png";
+import KalmanLajko from "@/assets/homepage/leaders/Kalman Lajko.png";
+import KennyLi from "@/assets/homepage/leaders/Kenny Li.png";
+import KinWaiLau from "@/assets/homepage/leaders/Kin Wai Lau.png";
 
-import Lim from "@/assets/homepage/block3/Lim Keng Hin.png";
-import LouisGuthmann from "@/assets/homepage/block3/Louis Guthmann.png";
-import LucaDonno from "@/assets/homepage/block3/Luca Donno.png";
+import Lim from "@/assets/homepage/leaders/Lim Keng Hin.png";
+import LouisGuthmann from "@/assets/homepage/leaders/Louis Guthmann.png";
+import LucaDonno from "@/assets/homepage/leaders/Luca Donno.png";
 
-import MarcTillement from "@/assets/homepage/block3/Marc Tillement.png";
-import MarcoMonaco from "@/assets/homepage/block3/Marco Monaco.png";
+import MarcTillement from "@/assets/homepage/leaders/Marc Tillement.png";
+import MarcoMonaco from "@/assets/homepage/leaders/Marco Monaco.png";
 
-import Raza from "@/assets/homepage/block3/Raza.png";
+import Raza from "@/assets/homepage/leaders/Raza.png";
 
-import TomaszWojewoda from "@/assets/homepage/block3/Tomasz Wojewoda.png";
+import TomaszWojewoda from "@/assets/homepage/leaders/Tomasz Wojewoda.png";
 
-import vince from "@/assets/homepage/block3/vince.png";
+import vince from "@/assets/homepage/leaders/vince.png";
 
-import VyasKrishnan from "@/assets/homepage/block3/Vyas Krishnan.png";
-import YemuXu from "@/assets/homepage/block3/Yemu Xu.png";
+import VyasKrishnan from "@/assets/homepage/leaders/Vyas Krishnan.png";
+import YemuXu from "@/assets/homepage/leaders/Yemu Xu.png";
 
 export type Speaker = {
   avatar: any;

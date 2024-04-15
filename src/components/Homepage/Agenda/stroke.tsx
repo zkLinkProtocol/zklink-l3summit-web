@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import adorn from "@/assets/homepage/block2/adorn.png";
-import adorn2 from "@/assets/homepage/block2/adorn2.png";
-import { StrokeItem } from "@/components/Homepage/Block2/data";
+import adorn from "@/assets/homepage/agenda/adorn.png";
+import adorn2 from "@/assets/homepage/agenda/adorn2.png";
+import { StrokeItem } from "@/components/Homepage/Agenda/data";
 
 const Wrap = styled.div`
   display: grid;

@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import styled from "styled-components";
-import adornIcon from "@/assets/homepage/block2/adorn3.png";
-import mapIcon from "@/assets/homepage/block2/map.svg";
-import bg from "@/assets/homepage/block2/bg.png";
+import adornIcon from "@/assets/homepage/agenda/adorn3.png";
+import mapIcon from "@/assets/homepage/agenda/map.svg";
+import bg from "@/assets/homepage/agenda/bg.png";
 import Image from "next/image";
 import { Flex, FlexCenter } from "@/styles";
 import { locationData } from "./data";

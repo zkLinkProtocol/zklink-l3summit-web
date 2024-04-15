@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import dappPicg from "@/assets/homepage/block3/banner.png";
-import adorn from "@/assets/homepage/block3/adorn.png";
+import dappPicg from "@/assets/homepage/leaders/banner.png";
+import adorn from "@/assets/homepage/leaders/adorn.png";
 import { Flex } from "@/styles";
-import Character from "@/components/Homepage/Block3/character";
+import Character from "@/components/Homepage/Leaders/character";
 
 const Wrap = styled(Flex)`
   position: relative;

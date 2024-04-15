@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
-import bg from "@/assets/homepage/block1/bg.png";
-import adorn from "@/assets/homepage/block1/adorn.png";
+import bg from "@/assets/homepage/introduce/bg.png";
 import { Flex, FlexBetween, FlexCenter } from "@/styles";
 
 const Wrap = styled(FlexCenter)`

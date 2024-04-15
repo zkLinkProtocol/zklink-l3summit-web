@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import bg from "@/assets/homepage/block4/bg.png";
+import bg from "@/assets/homepage/speaker/bg.png";
 import { FlexCenter } from "@/styles";
 
 const Wrap = styled(FlexCenter)`
