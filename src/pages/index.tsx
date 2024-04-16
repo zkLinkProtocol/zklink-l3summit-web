@@ -8,6 +8,7 @@ import Speaker from "../components/Homepage/Speaker";
 import Footer from "@/components/Footer";
 import Gathering from "@/components/Homepage/Gathering";
 import Promotional from "@/components/Homepage/Promotional";
+import Sponsors from "@/components/Homepage/Sponsors";
 
 const Wrapper = styled.div`
   position: relative;
@@ -21,6 +22,7 @@ const Index = () => {
   return (
     <Wrapper>
       <Header />
+      <Sponsors />
       <Introduce />
       <Promotional />
       <Gathering />
