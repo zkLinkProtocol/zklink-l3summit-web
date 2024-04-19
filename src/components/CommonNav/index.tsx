@@ -71,7 +71,7 @@ const Button = styled.a`
 `;
 
 const Header = memo(() => {
-  const isMobile = useResize();
+  const { isMobile } = useResize();
   return (
     <HeaderWrap>
       <Logo>

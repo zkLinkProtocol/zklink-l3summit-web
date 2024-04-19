@@ -2,7 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { FlexCenter } from "@/styles";
 import pic from "@/assets/homepage/sponsors/sponsors.png";
+import picSmall from "@/assets/homepage/sponsors/sponsorsSmall.png";
+
 import Image from "next/image";
+import { useResize } from "@/hooks/useResize";
 
 const Wrap = styled(FlexCenter)`
   position: relative;
@@ -26,15 +29,17 @@ const Pic = styled(Image)`
   padding: 0 10px;
 
   ${(props) => props.theme.breakpoints.down("sm")} {
+    max-height: max-content;
     margin: 30px 0 0;
   }
 `;
 
 const Index = () => {
+  const { width } = useResize();
   return (
     <Wrap>
       <Title>16.04.2024</Title>
-      <Pic src={pic} alt={"logo"} priority />
+      <Pic src={width < 590 ? picSmall : pic} alt={"logo"} priority />
     </Wrap>
   );
 };
