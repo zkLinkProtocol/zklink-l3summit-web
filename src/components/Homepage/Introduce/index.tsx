@@ -35,9 +35,10 @@ const InfoWrap = styled(FlexBetween)`
     flex-direction: column;
   }
 `;
-const TextWrap = styled(Flex)`
+const TextWrap = styled.div`
+  display: grid;
+  row-gap: 40px;
   max-width: 619px;
-  flex-direction: column;
 
   &.left {
     max-width: 500px;
@@ -71,11 +72,6 @@ const Text = styled.p`
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 1px;
-
-  &:nth-child(1),
-  &:nth-child(2) {
-    margin-bottom: 40px;
-  }
 
   &.leftTextTop,
   &.leftText {
