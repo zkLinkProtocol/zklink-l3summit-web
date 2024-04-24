@@ -396,7 +396,7 @@ export const strokeList3: StrokeItem[] = [
     infoCenterText:
       "Are Layer3 Features Such As Customization, Scalability,  Development, & User Experience Meant For All dApps & Use Cases?",
     infoBottomLText: "Arbitrum, DWF Labs, Scroll",
-    infoBottomRText: "Moderated by:",
+    infoBottomRText: "",
     infoClass: "adorn2",
     infoTopClass: "panel",
     infoCenterClass: "",
