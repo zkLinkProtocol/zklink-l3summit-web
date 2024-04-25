@@ -1,8 +1,11 @@
-import picIcon from "@/assets/homepage/agenda/img1.png";
-import picIcon2 from "@/assets/homepage/agenda/img2.png";
-import picIcon3 from "@/assets/homepage/agenda/img3.jpg";
-import picIcon4 from "@/assets/homepage/agenda/img4.jpg";
-import picIco5 from "@/assets/homepage/agenda/img5.jpg";
+import Istanbul_1 from "@/assets/homepage/agenda/Istanbul_1.webp";
+import Istanbul_2 from "@/assets/homepage/agenda/Istanbul_2.webp";
+import Denver_1 from "@/assets/homepage/agenda/Denver_1.webp";
+import Denver_2 from "@/assets/homepage/agenda/Denver_2.webp";
+import Denver_3 from "@/assets/homepage/agenda/Denver_3.webp";
+import Dubai_1 from "@/assets/homepage/agenda/Dubai_1.webp";
+import Dubai_2 from "@/assets/homepage/agenda/Dubai_2.webp";
+import Dubai_3 from "@/assets/homepage/agenda/Dubai_3.webp";
 
 //Partners
 import arpa from "@/assets/homepage/agenda/partners/ETHDenver/arpa.png";
@@ -416,6 +419,7 @@ const istanbulUrl =
   "https://www.google.com/maps/place/Nippon+Hotel/@41.0403927,28.9850207,17z/data=!3m1!4b1!4m9!3m8!1s0x14cab78c9ef8546b:0x90adf79b5bd868a9!5m2!4m1!1i2!8m2!3d41.0403927!4d28.9850207!16s%2Fg%2F1twzz0l_?hl=en&entry=ttu";
 const denverUrl =
   "https://www.google.com/maps/place/Le+M%C3%A9ridien+Denver+Downtown/@39.7442615,-104.996413,17z/data=!3m1!4b1!4m9!3m8!1s0x876c78d1105dd85b:0x6758a27ced3b948b!5m2!4m1!1i2!8m2!3d39.7442615!4d-104.9938381!16s%2Fg%2F11cs9lrm8f?entry=ttu";
+const DubaiUrl = "https://maps.app.goo.gl/qBJ8cesE44BQUJea6";
 
 export const locationData = [
   {
@@ -436,7 +440,7 @@ export const locationData = [
         url: istanbulUrl,
       },
     ],
-    right: [picIcon, picIcon2],
+    right: [Istanbul_1, Istanbul_2],
   },
   {
     type: "EthDenver",
@@ -466,27 +470,34 @@ export const locationData = [
         url: denverUrl,
       },
     ],
-    right: [picIcon3, picIcon4, picIco5],
+    right: [Denver_1, Denver_2, Denver_3],
   },
   {
     type: "Dubai",
     left: [
       {
-        title: "Nippon",
-        text: `Inspired by Japanese Minimalist design, Nippon is a modern hotel
-              located a short walk from Taksim Square and İstiklal Street in
-              Istanbul - the most central and active areas of Istanbul.`,
+        title: " Royal Ballroom - The Palace - One&Only Royal Mirage Dubai",
+        text: `A majestic Arabesque setting. 
+              The ballroom can be divided into three sections, each with a draw down screen.
+              The private entrances are all large enough to drive in cars. 
+              A large foyer also with private entrance, is excellent for receptions.`,
+        urlName: "",
+        url: "",
+      },
+      {
+        title: "",
+        text: `The venue has a capacity for 800 guests.`,
         urlName: "",
         url: "",
       },
       {
         title: "",
         text: "",
-        urlName: "Nippon Hotel - Istanbul",
-        url: istanbulUrl,
+        urlName: "Royal Ballroom - The Palace",
+        url: DubaiUrl,
       },
     ],
-    right: [picIcon, picIcon2],
+    right: [Dubai_1, Dubai_2, Dubai_3],
   },
 ];
 

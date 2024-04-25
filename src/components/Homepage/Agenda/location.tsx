@@ -79,6 +79,7 @@ const Box = styled.div`
   }
 `;
 const Title = styled.h3`
+  max-width: 400px;
   margin-bottom: 24px;
   color: #000;
   font-size: 24px;

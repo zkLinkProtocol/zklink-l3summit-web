@@ -4,56 +4,71 @@ import AlexMukhin from "@/assets/homepage/leaders/Alex Mukhin.png";
 import AnnaShakola from "@/assets/homepage/leaders/Anna Shakola.png";
 import AnshuAgrawal from "@/assets/homepage/leaders/Anshu Agrawal.png";
 import ArunDevabhaktuni from "@/assets/homepage/leaders/Arun Devabhaktuni.png";
-
 import BrandonKase from "@/assets/homepage/leaders/Brandon Kase.png";
-
 import CarterJackFeldman from "@/assets/homepage/leaders/Carter Jack Feldman.png";
 import ColtonConley from "@/assets/homepage/leaders/Colton Conley.png";
 import CooperMidroni from "@/assets/homepage/leaders/Cooper Midroni.png";
-
 import DanMills from "@/assets/homepage/leaders/Dan Mills.png";
 import DaniloKim from "@/assets/homepage/leaders/Danilo Kim.png";
 import DavidWeisiger from "@/assets/homepage/leaders/David Weisiger.png";
-import DerekChang from "@/assets/homepage/leaders/Derek Chang.png";
 import DiegoFerrer from "@/assets/homepage/leaders/Diego Ferrer.png";
 import DominikSchmid from "@/assets/homepage/leaders/Dominik Schmid.png";
 import DZ from "@/assets/homepage/leaders/DZ.png";
-
 import EllaJonas from "@/assets/homepage/leaders/Ella Jonas.png";
-import EricVreeland from "@/assets/homepage/leaders/Eric Vreeland.png";
-
-import FrancescoAndreoli from "@/assets/homepage/leaders/Francesco Andreoli.png";
-
 import GregEdison from "@/assets/homepage/leaders/Greg Edison.png";
-
 import HaichenShen from "@/assets/homepage/leaders/Haichen Shen.png";
-
 import IreneWu from "@/assets/homepage/leaders/Irene Wu.png";
-
 import JimmyYin from "@/assets/homepage/leaders/Jimmy Yin.png";
-import JoaquinMendesIzard from "@/assets/homepage/leaders/Joaquin Mendes Izard.png";
 import JonnyHuang from "@/assets/homepage/leaders/Jonny Huang.png";
 import JoseFabrega from "@/assets/homepage/leaders/Jose Fabrega.png";
-
 import KalmanLajko from "@/assets/homepage/leaders/Kalman Lajko.png";
 import KennyLi from "@/assets/homepage/leaders/Kenny Li.png";
 import KinWaiLau from "@/assets/homepage/leaders/Kin Wai Lau.png";
-
 import Lim from "@/assets/homepage/leaders/Lim Keng Hin.png";
 import LouisGuthmann from "@/assets/homepage/leaders/Louis Guthmann.png";
 import LucaDonno from "@/assets/homepage/leaders/Luca Donno.png";
-
 import MarcTillement from "@/assets/homepage/leaders/Marc Tillement.png";
 import MarcoMonaco from "@/assets/homepage/leaders/Marco Monaco.png";
-
 import Raza from "@/assets/homepage/leaders/Raza.png";
-
 import TomaszWojewoda from "@/assets/homepage/leaders/Tomasz Wojewoda.png";
-
 import vince from "@/assets/homepage/leaders/vince.png";
-
 import VyasKrishnan from "@/assets/homepage/leaders/Vyas Krishnan.png";
-import YemuXu from "@/assets/homepage/leaders/Yemu Xu.png";
+
+import AishwaryGupta from "@/assets/homepage/leaders/new1/Aishwary Gupta.png";
+import AkshitBordia from "@/assets/homepage/leaders/new1/Akshit Bordia.png";
+import AmitejGajjala from "@/assets/homepage/leaders/new1/Amitej Gajjala.png";
+import DerekChang from "@/assets/homepage/leaders/new1/Derek Chang.png";
+import EricVreeland from "@/assets/homepage/leaders/new1/Eric Vreeland.png";
+
+import EthanFrancis from "@/assets/homepage/leaders/new1/Ethan Francis.png";
+import EugeneNg from "@/assets/homepage/leaders/new1/Eugene Ng.png";
+import EvaWeng from "@/assets/homepage/leaders/new1/Eva Weng.png";
+import Fezyla from "@/assets/homepage/leaders/new1/Fezyla.png";
+import FrancescoAndreoli from "@/assets/homepage/leaders/new1/Francesco Andreoli.png";
+
+import IvanK from "@/assets/homepage/leaders/new1/Ivan K.png";
+import JanGorzny from "@/assets/homepage/leaders/new1/Jan Gorzny.png";
+import JoaquinMendesIzard from "@/assets/homepage/leaders/new1/Joaquin Mendes Izard.png";
+import JoshTobkin from "@/assets/homepage/leaders/new1/Josh Tobkin.png";
+import Khan from "@/assets/homepage/leaders/new1/Khan.png";
+
+import LuisSchliesske from "@/assets/homepage/leaders/new1/Luis Schliesske.png";
+import MiguelMorel from "@/assets/homepage/leaders/new1/Miguel Morel.png";
+import MirkoGarozzo from "@/assets/homepage/leaders/new1/Mirko Garozzo.png";
+import MomirAmidzic from "@/assets/homepage/leaders/new1/Momir Amidzic.png";
+import NinaRong from "@/assets/homepage/leaders/new1/Nina Rong.png";
+
+import OmarAzhar from "@/assets/homepage/leaders/new1/Omar Azhar.png";
+import QEDK from "@/assets/homepage/leaders/new1/QEDK.png";
+import RenatKhasanshyn from "@/assets/homepage/leaders/new1/Renat Khasanshyn.png";
+import ShubhamBhandari from "@/assets/homepage/leaders/new1/Shubham Bhandari.png";
+import StevenLi from "@/assets/homepage/leaders/new1/Steven Li.png";
+
+import ToghrulMaharramov from "@/assets/homepage/leaders/new1/Toghrul Maharramov.png";
+import TomNgo from "@/assets/homepage/leaders/new1/Tom Ngo.png";
+import YemuXu from "@/assets/homepage/leaders/new1/Yemu Xu.png";
+import YohaanNeroth from "@/assets/homepage/leaders/new1/Yohaan Neroth.png";
+import Yoli from "@/assets/homepage/leaders/new1/Yoli.png";
 
 export type Speaker = {
   avatar: any;
@@ -63,14 +78,7 @@ export type Speaker = {
   twitterHandler: string;
 };
 
-export const data: Speaker[] = [
-  {
-    avatar: vince,
-    name: "Vince Yang",
-    title: "Co-Founder",
-    project: "zk.Link",
-    twitterHandler: "https://twitter.com/zkVinceReal",
-  },
+const firstBatch: Speaker[] = [
   {
     avatar: CarterJackFeldman,
     name: "Carter Jack Feldman",
@@ -142,20 +150,6 @@ export const data: Speaker[] = [
     twitterHandler: "https://twitter.com/RealKinWai",
   },
   {
-    avatar: EricVreeland,
-    name: "Eric Vreeland",
-    title: "CSO",
-    project: "Polyhedra",
-    twitterHandler: "https://twitter.com/vreeland",
-  },
-  {
-    avatar: DerekChang,
-    name: "Derek Chang",
-    title: "COO",
-    project: "Kroma Network",
-    twitterHandler: "https://twitter.com/JunDerek",
-  },
-  {
     avatar: JoseFabrega,
     name: "Jose Fabrega",
     title: "CMO",
@@ -212,13 +206,6 @@ export const data: Speaker[] = [
     twitterHandler: "https://twitter.com/angrylogician",
   },
   {
-    avatar: JoaquinMendesIzard,
-    name: "Joaquin Mendes Izard",
-    title: "Partnerships Lead",
-    project: "Taiko",
-    twitterHandler: "https://twitter.com/Joaquin_Mendes1",
-  },
-  {
     avatar: MarcoMonaco,
     name: "Marco Monaco",
     title: "Growth Lead",
@@ -266,13 +253,6 @@ export const data: Speaker[] = [
     title: "Solution Engineer",
     project: "Celestia",
     twitterHandler: "https://twitter.com/dferrersan",
-  },
-  {
-    avatar: FrancescoAndreoli,
-    name: "Francesco Andreoli",
-    title: "Devrel",
-    project: "Consensys",
-    twitterHandler: "https://twitter.com/francescoswiss",
   },
   {
     avatar: GregEdison,
@@ -346,3 +326,225 @@ export const data: Speaker[] = [
     twitterHandler: "https://twitter.com/alex__mcl",
   },
 ];
+
+const secondBatch: Speaker[] = [
+  {
+    avatar: vince,
+    name: "Vince Yang",
+    title: "Co-Founder",
+    project: "zkLink",
+    twitterHandler: "https://twitter.com/zkVinceReal",
+  },
+  {
+    avatar: OmarAzhar,
+    name: "Omar Azhar",
+    title: "Head of Business Development & Partnerships",
+    project: "zkSync",
+    twitterHandler: "https://x.com/ozhar",
+  },
+  {
+    avatar: JanGorzny,
+    name: "Jan Gorzny",
+    title: "Technical Co-Founder & Lead",
+    project: "Zircuit",
+    twitterHandler: "https://x.com/jgorzny",
+  },
+  {
+    avatar: TomNgo,
+    name: "Tom Ngo",
+    title: "CEO & Executive Lead",
+    project: "Metis",
+    twitterHandler: "https://x.com/tomngodefi",
+  },
+  {
+    avatar: JoshTobkin,
+    name: "Josh Tobkin",
+    title: "Co-Founder & CEO",
+    project: "Supra",
+    twitterHandler: "https://x.com/JoshuaTobkin",
+  },
+  {
+    avatar: EugeneNg,
+    name: "Eugene Ng",
+    title: "Founding Partner",
+    project: "DWF Labs",
+    twitterHandler: "https://x.com/Eug_Ng",
+  },
+  {
+    avatar: MiguelMorel,
+    name: "Miguel Morel",
+    title: "Co-Founder & CEO",
+    project: "Arkham",
+    twitterHandler: "https://x.com/RealMiguelMorel",
+  },
+  {
+    avatar: YemuXu,
+    name: "Yemu Xu",
+    title: "Co-Founder",
+    project: "ARPA",
+    twitterHandler: "https://x.com/wildwoodmoo",
+  },
+  {
+    avatar: LuisSchliesske,
+    name: "Luis Schliesske",
+    title: "Co-Founder",
+    project: "Gelato",
+    twitterHandler: "https://x.com/gitpusha",
+  },
+  {
+    avatar: AkshitBordia,
+    name: "Akshit Bordia",
+    title: "Co-Founder",
+    project: "LogX",
+    twitterHandler: "https://x.com/AkshitBordia",
+  },
+  {
+    avatar: EvaWeng,
+    name: "Eva Weng",
+    title: "Head of Investments",
+    project: "Caladan",
+    twitterHandler: "https://x.com/GuruXing",
+  },
+  {
+    avatar: RenatKhasanshyn,
+    name: "Renat Khasanshyn",
+    title: "Founding Member",
+    project: "Protofire DAO",
+    twitterHandler: "https://x.com/renatco",
+  },
+  {
+    avatar: AmitejGajjala,
+    name: "Amitej Gajjala",
+    title: "Founding contributor",
+    project: "KelpDAO",
+    twitterHandler: "https://x.com/GAmitej",
+  },
+  {
+    avatar: Khan,
+    name: "Khan",
+    title: "CEO",
+    project: "Layerbank",
+    twitterHandler: "",
+  },
+  {
+    avatar: DerekChang,
+    name: "Derek Chang",
+    title: "COO",
+    project: "Kroma Network",
+    twitterHandler: "https://x.com/JunDerek",
+  },
+  {
+    avatar: EricVreeland,
+    name: "Eric Vreeland",
+    title: "CSO",
+    project: "Polyhedra",
+    twitterHandler: "https://x.com/vreeland",
+  },
+  {
+    avatar: IvanK,
+    name: "Ivan K",
+    title: "CMO",
+    project: "Stakestone",
+    twitterHandler: "https://x.com/@Ikkweb3",
+  },
+  {
+    avatar: Fezyla,
+    name: "Fezyla Mokrani-Zemour",
+    title: "COS",
+    project: "Hyperlane",
+    twitterHandler: "https://x.com/madamesatoshi",
+  },
+  {
+    avatar: NinaRong,
+    name: "Nina Rong",
+    title: "Head of Ecosystem Development",
+    project: "Arbitrum",
+    twitterHandler: "https://x.com/nina_rong",
+  },
+  {
+    avatar: ShubhamBhandari,
+    name: "Shubham Bhandari",
+    title: "Ecosystem Head",
+    project: "Manta",
+    twitterHandler: "https://x.com/Shubhamb126",
+  },
+  {
+    avatar: AishwaryGupta,
+    name: "Aishwary Gupta",
+    title: "Global Head of Payment & Fintech",
+    project: "Polygon Labs",
+    twitterHandler: "https://x.com/0xAishwary",
+  },
+  {
+    avatar: Yoli,
+    name: "Yoli",
+    title: "Product Lead",
+    project: "Brevis",
+    twitterHandler: "https://x.com/brevis_zk",
+  },
+  {
+    avatar: JoaquinMendesIzard,
+    name: "Joaquin Mendes Izard",
+    title: "Partnership Lead",
+    project: "Taiko",
+    twitterHandler: "https://x.com/Joaquin_Mendes1",
+  },
+  {
+    avatar: MomirAmidzic,
+    name: "Momir Amidzic",
+    title: "Senior Director",
+    project: "IOSG",
+    twitterHandler: "https://x.com/momir_amidzic",
+  },
+  {
+    avatar: QEDK,
+    name: "QEDK",
+    title: "Senior R&D Engineer",
+    project: "Avail",
+    twitterHandler: "https://x.com/qedk_",
+  },
+  {
+    avatar: FrancescoAndreoli,
+    name: "Francesco Andreoli",
+    title: "DevRel",
+    project: "Consensys",
+    twitterHandler: "https://x.com/francescoswiss",
+  },
+  {
+    avatar: MirkoGarozzo,
+    name: "Mirko Garozzo",
+    title: "DevRel",
+    project: "MetaMask",
+    twitterHandler: "https://twitter.com/mirkogarozzo",
+  },
+  {
+    avatar: YohaanNeroth,
+    name: "Yohaan Neroth",
+    title: "DeFi Growth",
+    project: "X Layer",
+    twitterHandler: "https://x.com/YJN58",
+  },
+  {
+    avatar: EthanFrancis,
+    name: "Ethan Francis",
+    title: "Developer Relations",
+    project: "Particle Network",
+    twitterHandler: "https://x.com/TABASCOweb3",
+  },
+  {
+    avatar: StevenLi,
+    name: "Steven Li",
+    title: "Growth",
+    project: "Risc0",
+    twitterHandler: "https://x.com/li_steven1",
+  },
+  {
+    avatar: ToghrulMaharramov,
+    name: "Toghrul Maharramov",
+    title: "Contributor",
+    project: "Scroll",
+    twitterHandler: "https://x.com/toghrulmaharram",
+  },
+];
+
+export const data: Speaker[] = [...secondBatch, ...firstBatch];

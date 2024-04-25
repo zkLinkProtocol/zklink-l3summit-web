@@ -93,6 +93,7 @@ const Text = styled.span`
     width: 100vw;
   }
 `;
+
 const Index = () => {
   return (
     <Wrap>
@@ -100,6 +101,12 @@ const Index = () => {
         <Box
           key={index}
           href={item.twitterHandler}
+          onClick={(e) => {
+            if (!item.twitterHandler) {
+              e.preventDefault();
+              e.stopPropagation();
+            }
+          }}
           target={"_blank"}
           className={"normal"}
         >
