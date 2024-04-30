@@ -15,4 +15,4 @@ const images = imagesContextKeys
   ?.filter((key: string) => key.includes("gathering"))
   .map((key: string) => imagesContextKeys(key));
 
-export const imgs: StaticImageData[] = [...images];
+export const imgs: StaticImageData[] = [...images].reverse();

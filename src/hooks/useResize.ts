@@ -6,7 +6,7 @@ export function useResize(): {
   height: number;
 } {
   const [isMobile, setIsMobile] = useState(false);
-  const [size, setSize] = useState({ width: 0, height: 0 });
+  const [size, setSize] = useState({ width: 960, height: 0 });
 
   useEffect(() => {
     const resizeEvent = new Event("resize");
