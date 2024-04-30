@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FlexCenter } from "@/styles";
 import Tabs from "@/components/Homepage/Agenda/tabs";
-import { Tab } from "@/components/Homepage/Agenda/data";
+import {
+  strokeList1,
+  strokeList2,
+  strokeList3,
+  Tab,
+} from "@/components/Homepage/Agenda/data";
 import Video from "@/components/Gallery/video";
 import Photo from "@/components/Gallery/photos";
 
@@ -34,6 +39,18 @@ const Title = styled.h3`
     background: #51cfff;
   }
 `;
+const Date = styled.div`
+  margin-bottom: 48px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.6px;
+
+  ${(props) => props.theme.breakpoints.down("sm")} {
+    font-size: 20px;
+  }
+`;
 
 const Index = () => {
   const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver", "Dubai"]);
@@ -41,10 +58,21 @@ const Index = () => {
   const handleClick = (value: Tab) => {
     setTab(value);
   };
+  const name = (val: Tab) => {
+    switch (val) {
+      case "EthDenver":
+        return { name: "ETHDenver", data: strokeList2 };
+      case "Istanbul":
+        return { name: "DevConnect", data: strokeList1 };
+      case "Dubai":
+        return { name: "Token2049", data: strokeList3 };
+    }
+  };
   return (
     <Wrap>
       <Title>GALLERY </Title>
       <Tabs tab={tab} click={handleClick} />
+      <Date>{`>${name(tab).name}<`}</Date>
       <Video type={tab} />
       <Photo type={tab} />
     </Wrap>
