@@ -150,7 +150,7 @@ const Index = () => {
           <Logo src={zk} className={"zk"} alt="zk" />
         </IconWrap>
         <Title>L3 Summit</Title>
-        <Span>Dubai</Span>
+        <Span>EthCC Brussels</Span>
         <ButtonWrap>
           <Button
             href={"https://forms.gle/CfMYKp7nYDTB2me97"}
