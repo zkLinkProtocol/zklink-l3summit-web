@@ -79,8 +79,9 @@ const P = styled.p`
 `;
 
 const ScrollImg = styled(Image)`
+  max-height: 40px;
   width: auto;
-  height: 40px;
+  height: auto;
   margin: 30px;
   object-fit: cover;
   border-radius: 12px;
