@@ -6,13 +6,15 @@ import { data } from "./data";
 
 const Wrap = styled.div`
   position: relative;
+  max-width: 1024px;
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 137px;
+  margin: 137px auto 0;
 
   ${(props) => props.theme.breakpoints.down("sm")} {
     grid-template-columns: 43% 43%;
+    gap: 10px;
     justify-items: center;
     justify-content: center;
     margin-top: 65px;
@@ -21,8 +23,6 @@ const Wrap = styled.div`
 `;
 const Box = styled.a`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 256px;
   height: 301px;
@@ -38,12 +38,13 @@ const Box = styled.a`
   ${(props) => props.theme.breakpoints.down("sm")} {
     width: 100%;
     height: auto;
-    transform: scale(0.7);
+    transform: scale(0.9);
   }
 `;
 
 const AvatarBox = styled(FlexCenter)`
   position: relative;
+  margin-top: 30px;
 
   &::before {
     position: absolute;

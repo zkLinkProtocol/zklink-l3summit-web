@@ -9,8 +9,14 @@ import {
   strokeList1,
   strokeList2,
   strokeList3,
+  tabData,
 } from "@/components/Homepage/Agenda/data";
 import Partners from "@/components/Homepage/Agenda/partners";
+import dubaiBanner from "@/assets/homepage/agenda/partners/DubaiBanner/Dubai_banner.webp";
+import dubaiBanner_mobile from "@/assets/homepage/agenda/partners/DubaiBanner/Dubai_banner_mobile.webp";
+
+import Image from "next/image";
+import { useResize } from "@/hooks/useResize";
 
 type Tab = "Istanbul" | "EthDenver" | "Dubai";
 
@@ -89,9 +95,32 @@ const Date = styled.div`
   }
 `;
 
+const DubaiBanner = styled(Image)`
+  max-width: 1175px;
+  width: 100%;
+  height: auto;
+
+  ${(props) => props.theme.breakpoints.down("xs")} {
+    width: 100%;
+  }
+`;
+
+const PartnersImg = ({ size }: { size: number }) => {
+  return (
+    <div>
+      <DubaiBanner
+        priority
+        src={size < 600 ? dubaiBanner_mobile : dubaiBanner}
+        alt=""
+      />
+    </div>
+  );
+};
+
 const Index = () => {
   const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver", "Dubai"]);
   const [tab, setTab] = useState<Tab>(tabs[tabs.length - 1]);
+  const { width } = useResize();
   const handleClick = (value: Tab) => {
     setTab(value);
   };
@@ -112,37 +141,24 @@ const Index = () => {
       case "Istanbul":
         return null;
       case "Dubai":
-        return <Partners data={partnerDubai} />;
+        return <PartnersImg size={width} />;
     }
   };
   return (
     <Wrap>
       <Title>AGENDA</Title>
       <TabWrap>
-        <TabItem
-          className={tab === "Istanbul" ? "action" : ""}
-          onClick={() => {
-            handleClick("Istanbul");
-          }}
-        >
-          Istanbul <br /> 16.11.2023
-        </TabItem>
-        <TabItem
-          className={tab === "EthDenver" ? "action" : ""}
-          onClick={() => {
-            handleClick("EthDenver");
-          }}
-        >
-          Denver <br /> 02.03.2024
-        </TabItem>
-        <TabItem
-          className={tab === "Dubai" ? "action" : ""}
-          onClick={() => {
-            handleClick("Dubai");
-          }}
-        >
-          Dubai <br /> 16.04.2024
-        </TabItem>
+        {tabData.map((item) => (
+          <TabItem
+            key={item.tag}
+            className={tab === item.tag ? "action" : ""}
+            onClick={() => {
+              handleClick(item.tag);
+            }}
+          >
+            {item.text} <br /> {item.date}
+          </TabItem>
+        ))}
       </TabWrap>
       <Date>{`>${name(tab).name}<`}</Date>
       <Stroke data={name(tab).data} />

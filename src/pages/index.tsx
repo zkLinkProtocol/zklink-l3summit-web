@@ -22,7 +22,7 @@ const Index = () => {
   return (
     <Wrapper>
       <Header />
-      <Sponsors />
+      {/*<Sponsors />*/}
       <Introduce />
       <Promotional />
       <Gathering />
