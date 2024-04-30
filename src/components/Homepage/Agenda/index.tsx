@@ -96,7 +96,7 @@ const Index = () => {
       case "Istanbul":
         return { name: "DevConnect", data: strokeList1 };
       case "Dubai":
-        return { name: "Dubai", data: strokeList3 };
+        return { name: "Token2049", data: strokeList3 };
     }
   };
   const partners = (val: Tab) => {

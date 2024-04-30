@@ -576,6 +576,6 @@ export const tabData: {
   {
     tag: "Dubai",
     date: "16.04.2024",
-    text: "Token2049 Dubai",
+    text: "Dubai",
   },
 ];
