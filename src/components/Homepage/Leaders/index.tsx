@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import adorn from "@/assets/homepage/leaders/adorn.png";
-import { Flex } from "@/styles";
 import Character from "@/components/Homepage/Leaders/character";
 import Marquee from "react-fast-marquee";
 import { leftIcons, rightIcons } from "@/components/Homepage/Leaders/scroll";
@@ -79,10 +78,10 @@ const P = styled.p`
 `;
 
 const ScrollImg = styled(Image)`
-  max-height: 40px;
+  // max-height: 40px;
   width: auto;
   height: auto;
-  margin: 30px;
+  margin: 40px;
   object-fit: cover;
   border-radius: 12px;
 

@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Flex, FlexCenter } from "@/styles";
+import { FlexCenter } from "@/styles";
 import Stroke from "@/components/Homepage/Agenda/stroke";
 import Location from "@/components/Homepage/Agenda/location";
 import {
-  partnerDubai,
   partnerEthDenver,
   strokeList1,
   strokeList2,
   strokeList3,
-  tabData,
+  Tab,
 } from "@/components/Homepage/Agenda/data";
 import Partners from "@/components/Homepage/Agenda/partners";
 import dubaiBanner from "@/assets/homepage/agenda/partners/DubaiBanner/Dubai_banner.webp";
@@ -17,8 +16,7 @@ import dubaiBanner_mobile from "@/assets/homepage/agenda/partners/DubaiBanner/Du
 
 import Image from "next/image";
 import { useResize } from "@/hooks/useResize";
-
-type Tab = "Istanbul" | "EthDenver" | "Dubai";
+import Tabs from "@/components/Homepage/Agenda/tabs";
 
 const Wrap = styled(FlexCenter)`
   position: relative;
@@ -48,40 +46,7 @@ const Title = styled.h3`
     background: #51cfff;
   }
 `;
-const TabWrap = styled(Flex)`
-  margin: 50px 0 88px;
-  border: 1px solid #000;
-  cursor: pointer;
 
-  ${(props) => props.theme.breakpoints.down("sm")} {
-    margin: 23px 26px 50px;
-  }
-`;
-const TabItem = styled.span`
-  display: inline-block;
-  width: 230px;
-  color: #000;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 32px; /* 160% */
-  letter-spacing: 0.6px;
-  padding: 6px 24px;
-
-  &.action {
-    color: #fff;
-    background-color: #231f21;
-  }
-
-  ${(props) => props.theme.breakpoints.down("sm")} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 16px;
-    line-height: normal;
-  }
-`;
 const Date = styled.div`
   margin-bottom: 48px;
   color: #000;
@@ -147,19 +112,7 @@ const Index = () => {
   return (
     <Wrap>
       <Title>AGENDA</Title>
-      <TabWrap>
-        {tabData.map((item) => (
-          <TabItem
-            key={item.tag}
-            className={tab === item.tag ? "action" : ""}
-            onClick={() => {
-              handleClick(item.tag);
-            }}
-          >
-            {item.text} <br /> {item.date}
-          </TabItem>
-        ))}
-      </TabWrap>
+      <Tabs tab={tab} click={handleClick} />
       <Date>{`>${name(tab).name}<`}</Date>
       <Stroke data={name(tab).data} />
       <Location type={tab} />

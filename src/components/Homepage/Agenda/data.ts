@@ -556,8 +556,10 @@ export const partnerDubai: Partner = {
   ],
 };
 
+export type Tab = "Istanbul" | "EthDenver" | "Dubai";
+
 export const tabData: {
-  tag: "Istanbul" | "EthDenver" | "Dubai";
+  tag: Tab;
   date: string;
   text: string;
 }[] = [
@@ -574,6 +576,6 @@ export const tabData: {
   {
     tag: "Dubai",
     date: "16.04.2024",
-    text: "Dubai",
+    text: "Token2049 Dubai",
   },
 ];
