@@ -159,7 +159,7 @@ const Index = () => {
             Apply For Speaker
           </Button>
           <Button
-            href={"https://lu.ma/L3Summit-Dubai"}
+            href={"https://lu.ma/L3Summit-EthCC"}
             target={"_blank"}
             data-luma-action="checkout"
             data-luma-event-id="evt-Um0L9kcRnLHolzz"

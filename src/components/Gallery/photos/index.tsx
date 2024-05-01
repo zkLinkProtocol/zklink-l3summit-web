@@ -9,7 +9,7 @@ import { Tab } from "@/components/Homepage/Agenda/data";
 const Wrap = styled(FlexCenter)`
   position: relative;
   max-width: 1200px;
-  margin-top: 232px;
+  margin-top: 50px;
 
   ${(props) => props.theme.breakpoints.down("xs")} {
     margin-top: 100px;
