@@ -74,21 +74,10 @@ const App = (props: any) => {
           property="og:image"
           content="https://www.l3summit.xyz/l3summit-preview.png"
         />
-
-        {/*<script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-310H4YXPGL"
+        <meta
+          name="google-site-verification"
+          content="n-twPhLaFKnhe4I5g6inSM12BRkoDuSTzxobzAVjWGI"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-           gtag('config', 'G-xxx');
-          `,
-          }}
-        />*/}
       </Head>
       <GlobalStyle />
       <MuiThemeProvider theme={MuiTheme}>
