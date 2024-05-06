@@ -100,6 +100,7 @@ const InfoTop = styled.div`
   &.panel {
     display: inline-block;
     padding: 4px 16px;
+    margin-left: -16px;
     border-radius: 24px;
     background: #ecf0f1;
   }
