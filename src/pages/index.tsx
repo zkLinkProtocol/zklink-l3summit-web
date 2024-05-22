@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import Gathering from "@/components/Homepage/Gathering";
 import Promotional from "@/components/Homepage/Promotional";
 import Sponsors from "@/components/Homepage/Sponsors";
+import Map from "@/components/Homepage/Map";
 
 const Wrapper = styled.div`
   position: relative;
@@ -24,7 +25,8 @@ const Index = () => {
       <Header />
       {/*<Sponsors />*/}
       <Introduce />
-      <Promotional />
+      {/*<Promotional />*/}
+      <Map />
       <Gathering />
       <Agenda />
       <Leaders />

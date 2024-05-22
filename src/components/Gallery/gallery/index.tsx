@@ -10,6 +10,7 @@ import {
 } from "@/components/Homepage/Agenda/data";
 import Video from "@/components/Gallery/video";
 import Photo from "@/components/Gallery/photos";
+import { useRouter } from "next/router";
 
 const Wrap = styled(FlexCenter)`
   position: relative;
@@ -53,8 +54,10 @@ const Date = styled.div`
 `;
 
 const Index = () => {
+  const router = useRouter();
+  const { type } = router.query;
   const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver", "Dubai"]);
-  const [tab, setTab] = useState<Tab>(tabs[tabs.length - 1]);
+  const [tab, setTab] = useState<Tab>((type as Tab) || tabs[tabs.length - 1]);
   const handleClick = (value: Tab) => {
     setTab(value);
   };
