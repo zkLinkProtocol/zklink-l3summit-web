@@ -120,7 +120,7 @@ const Header = memo(() => {
         <a href="https://twitter.com/L3_Summit" target={"_blank"}>
           <IconItem className={"twitter"} src={twitter} alt="twitter" />
         </a>
-        <Button href={"https://lu.ma/L3Summit-EthCC"} target={"_blank"}>
+        <Button href={"https://lu.ma/l3zk-ethcc"} target={"_blank"}>
           Join {!isMobile && "Now"}
         </Button>
         <Button className={"play"} href={"/gallery"}>

@@ -92,7 +92,7 @@ const Text = styled.p`
 const Index = () => {
   return (
     <Wrap>
-      <Time>July 2024</Time>
+      <Time>10th July 2024</Time>
       <InfoWrap>
         <TextWrap className={"left"}>
           <Text className={"leftTextTop"}>

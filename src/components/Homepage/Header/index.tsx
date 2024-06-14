@@ -149,7 +149,7 @@ const Index = () => {
           <Text>Hosted by:</Text>
           <Logo src={zk} className={"zk"} alt="zk" />
         </IconWrap>
-        <Title>L3 Summit</Title>
+        <Title>L3 & ZK Night</Title>
         <Span>EthCC Brussels</Span>
         <ButtonWrap>
           <Button
@@ -159,7 +159,7 @@ const Index = () => {
             Apply For Speaker
           </Button>
           <Button
-            href={"https://lu.ma/L3Summit-EthCC"}
+            href={"https://lu.ma/l3zk-ethcc"}
             target={"_blank"}
             data-luma-action="checkout"
             data-luma-event-id="evt-Um0L9kcRnLHolzz"
