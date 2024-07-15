@@ -1,5 +1,5 @@
 export const tabData: {
-  tag: "Istanbul" | "EthDenver" | "Dubai";
+  tag: "Istanbul" | "EthDenver" | "Dubai" | "Brussels";
   date: string;
   text: string;
 }[] = [
@@ -17,5 +17,10 @@ export const tabData: {
     tag: "Dubai",
     date: "16.04.2024",
     text: "Token2049 Dubai",
+  },
+  {
+    tag: "Brussels",
+    date: "10.07.2024",
+    text: "EthCC Brussels",
   },
 ];

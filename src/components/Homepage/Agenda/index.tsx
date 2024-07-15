@@ -8,6 +8,7 @@ import {
   strokeList1,
   strokeList2,
   strokeList3,
+  strokeList4,
   Tab,
 } from "@/components/Homepage/Agenda/data";
 import Partners from "@/components/Homepage/Agenda/partners";
@@ -83,7 +84,12 @@ const PartnersImg = ({ size }: { size: number }) => {
 };
 
 const Index = () => {
-  const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver", "Dubai"]);
+  const [tabs] = useState<Tab[]>([
+    "Istanbul",
+    "EthDenver",
+    "Dubai",
+    "Brussels",
+  ]);
   const [tab, setTab] = useState<Tab>(tabs[tabs.length - 1]);
   const { width } = useResize();
   const handleClick = (value: Tab) => {
@@ -97,6 +103,8 @@ const Index = () => {
         return { name: "DevConnect", data: strokeList1 };
       case "Dubai":
         return { name: "Token2049", data: strokeList3 };
+      case "Brussels":
+        return { name: "EthCC", data: strokeList4 };
     }
   };
   const partners = (val: Tab) => {
@@ -107,6 +115,8 @@ const Index = () => {
         return null;
       case "Dubai":
         return <PartnersImg size={width} />;
+      case "Brussels":
+        null;
     }
   };
   return (

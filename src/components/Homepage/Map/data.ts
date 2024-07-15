@@ -50,16 +50,16 @@ export const introduceData = {
   ],
   Brussels: [
     {
-      textL: "",
-      textR: "",
+      textL: "400+",
+      textR: "Particiants",
     },
     {
-      textL: "",
-      textR: "Coming Soon...",
+      textL: "15",
+      textR: "Speakers",
     },
     {
-      textL: "",
-      textR: "",
+      textL: "6",
+      textR: "Media Partners",
     },
   ],
 };

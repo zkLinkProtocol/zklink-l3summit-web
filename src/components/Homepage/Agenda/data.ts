@@ -415,11 +415,67 @@ export const strokeList3: StrokeItem[] = [
   },
 ];
 
+export const strokeList4: StrokeItem[] = [
+  {
+    time: "18:00 pm",
+    infoTopText: "",
+    infoCenterText: "Reception & Networking",
+    infoBottomLText: "",
+    infoClass: "bgBlack",
+    infoTopClass: "",
+    infoCenterClass: "colorWhite",
+  },
+  {
+    time: "19:30 pm",
+    infoTopText: "Fireside Chat",
+    infoCenterText: "Fireside Chat with ZKsync: The ZK Stack Takeover",
+    infoBottomLText: "zkLink Matter Labs",
+    infoBottomRText: "",
+    infoClass: "",
+    infoTopClass: "",
+    infoCenterClass: "",
+  },
+  {
+    time: "20:00 pm",
+    infoTopText: "Panel",
+    infoCenterText:
+      "Discussing ZK Use Cases: Scaling Ethereum With ZK Rollups, Infrastructure & Interoperability, and Considerations For DApp Development",
+    infoBottomLText: "AlignedLayer, Linea, Risc0, Taiko, ZKM",
+    infoBottomRText: "Moderated By: Scroll",
+    infoClass: "adorn2",
+    infoTopClass: "",
+    infoCenterClass: "",
+  },
+  {
+    time: "20:45 pm",
+    infoTopText: "Keynote",
+    infoCenterText:
+      "Demystifying Layer 3 Misconceptions: What Are The Different Approaches and Designs and What Are They Used For?",
+    infoBottomLText: "Cartesi, Meson Finance, Orbs, zkCandy, zkLighter",
+    infoBottomRText: "Moderated By: EthStorage",
+    infoClass: "",
+    infoTopClass: "",
+    infoCenterClass: "",
+  },
+  {
+    time: "21:30 pm",
+    infoTopText: "",
+    infoCenterText: "Networking",
+    infoBottomLText: "",
+    infoClass: "bgOrange",
+    infoTopClass: "",
+    infoCenterClass: "colorWhite",
+  },
+];
+
 const istanbulUrl =
   "https://www.google.com/maps/place/Nippon+Hotel/@41.0403927,28.9850207,17z/data=!3m1!4b1!4m9!3m8!1s0x14cab78c9ef8546b:0x90adf79b5bd868a9!5m2!4m1!1i2!8m2!3d41.0403927!4d28.9850207!16s%2Fg%2F1twzz0l_?hl=en&entry=ttu";
 const denverUrl =
   "https://www.google.com/maps/place/Le+M%C3%A9ridien+Denver+Downtown/@39.7442615,-104.996413,17z/data=!3m1!4b1!4m9!3m8!1s0x876c78d1105dd85b:0x6758a27ced3b948b!5m2!4m1!1i2!8m2!3d39.7442615!4d-104.9938381!16s%2Fg%2F11cs9lrm8f?entry=ttu";
 const DubaiUrl = "https://maps.app.goo.gl/qBJ8cesE44BQUJea6";
+
+const BrusselsUrl =
+  "https://www.google.com/maps/dir//BREWDOG+BRUSSELS+GOOGLE+MAP/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47c3c47fc6b026d3:0xf3e707533c2c8771?sa=X&ved=1t:3061&ictx=111&cshid=1721028942126926";
 
 export const locationData = [
   {
@@ -499,6 +555,30 @@ export const locationData = [
     ],
     right: [Dubai_1, Dubai_2, Dubai_3],
   },
+  {
+    type: "Brussels",
+    left: [
+      {
+        title: "BrewDog Brussels",
+        text: `No-nonsense chain bar specialising in the Scottish brewery's craft beers, with regular guest brews.`,
+        urlName: "",
+        url: "",
+      },
+      {
+        title: "",
+        text: `The venue has a capacity for 450 guests.`,
+        urlName: "",
+        url: "",
+      },
+      {
+        title: "",
+        text: "",
+        urlName: "BrewDog Brussels",
+        url: BrusselsUrl,
+      },
+    ],
+    right: [],
+  },
 ];
 
 export type Partner = {
@@ -556,7 +636,7 @@ export const partnerDubai: Partner = {
   ],
 };
 
-export type Tab = "Istanbul" | "EthDenver" | "Dubai";
+export type Tab = "Istanbul" | "EthDenver" | "Dubai" | "Brussels";
 
 export const tabData: {
   tag: Tab;
@@ -577,5 +657,10 @@ export const tabData: {
     tag: "Dubai",
     date: "16.04.2024",
     text: "Dubai",
+  },
+  {
+    tag: "Brussels",
+    date: "10.07.2024",
+    text: "Brussels",
   },
 ];
