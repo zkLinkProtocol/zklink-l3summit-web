@@ -6,6 +6,9 @@ import Denver_3 from "@/assets/homepage/agenda/Denver_3.webp";
 import Dubai_1 from "@/assets/homepage/agenda/Dubai_1.webp";
 import Dubai_2 from "@/assets/homepage/agenda/Dubai_2.webp";
 import Dubai_3 from "@/assets/homepage/agenda/Dubai_3.webp";
+import Brussels_1 from "@/assets/homepage/agenda/Brussels_1.jpg";
+import Brussels_2 from "@/assets/homepage/agenda/Brussels_2.jpg";
+import Brussels_3 from "@/assets/homepage/agenda/Brussels_3.jpg";
 
 //Partners
 import arpa from "@/assets/homepage/agenda/partners/ETHDenver/arpa.png";
@@ -577,7 +580,7 @@ export const locationData = [
         url: BrusselsUrl,
       },
     ],
-    right: [],
+    right: [Brussels_1, Brussels_2, Brussels_3],
   },
 ];
 
