@@ -27,21 +27,29 @@ const dubai = "/gallery/dubai.mp4";
 
 const Index: FC<{ type: Tab }> = ({ type }) => {
   const videoSource =
-    type === "Istanbul" ? istanbul : type === "EthDenver" ? ethDenver : dubai;
+    type === "Istanbul"
+      ? istanbul
+      : type === "EthDenver"
+      ? ethDenver
+      : type === "Dubai"
+      ? dubai
+      : "";
   return (
-    <Wrap>
-      <Video
-        controls={true}
-        autoPlay
-        muted
-        loop
-        preload="auto"
-        playsInline
-        key={type}
-      >
-        <source src={videoSource} type="video/mp4" />
-      </Video>
-    </Wrap>
+    videoSource && (
+      <Wrap>
+        <Video
+          controls={true}
+          autoPlay
+          muted
+          loop
+          preload="auto"
+          playsInline
+          key={type}
+        >
+          <source src={videoSource} type="video/mp4" />
+        </Video>
+      </Wrap>
+    )
   );
 };
 
