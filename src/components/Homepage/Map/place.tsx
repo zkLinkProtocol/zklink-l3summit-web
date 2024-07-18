@@ -95,10 +95,10 @@ const Text = styled.div`
 const Index = () => {
   const router = useRouter();
   const handleClick = (type: IntroduceTitle) => {
-    if (type === "Brussels") {
-      window.open("https://lu.ma/l3zk-ethcc");
-      return;
-    }
+    // if (type === "Brussels") {
+    //   window.open("https://lu.ma/l3zk-ethcc");
+    //   return;
+    // }
     router.push({
       pathname: "gallery",
       query: { type },

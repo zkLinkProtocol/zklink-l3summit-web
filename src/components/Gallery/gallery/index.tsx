@@ -6,6 +6,7 @@ import {
   strokeList1,
   strokeList2,
   strokeList3,
+  strokeList4,
   Tab,
 } from "@/components/Homepage/Agenda/data";
 import Video from "@/components/Gallery/video";
@@ -56,7 +57,7 @@ const Date = styled.div`
 const Index = () => {
   const router = useRouter();
   const { type } = router.query;
-  const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver", "Dubai"]);
+  const [tabs] = useState<Tab[]>(["Istanbul", "EthDenver", "Dubai", "Brussels"]);
   const [tab, setTab] = useState<Tab>((type as Tab) || tabs[tabs.length - 1]);
   const handleClick = (value: Tab) => {
     setTab(value);
@@ -69,6 +70,8 @@ const Index = () => {
         return { name: "DevConnect", data: strokeList1 };
       case "Dubai":
         return { name: "Token2049", data: strokeList3 };
+      case "Brussels":
+        return { name: "EthCC", data: strokeList4 };
     }
   };
   return (

@@ -62,6 +62,7 @@ const AvatarBox = styled(FlexCenter)`
 const Avatar = styled(Image)`
   width: 130px;
   height: 130px;
+  border-radius: 50%;
 `;
 const Name = styled.span`
   margin: 25px 0 7px;
