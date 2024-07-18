@@ -4,6 +4,7 @@ import Image from "next/image";
 import logo from "../../assets/logo/logo.png";
 import twitter from "../../assets/nav/twitter.svg";
 import gallery from "../../assets/nav/gallery.svg";
+import youtube from "../../assets/nav/youtube.svg";
 import { useResize } from "@/hooks/useResize";
 import Link from "next/link";
 
@@ -120,7 +121,10 @@ const Header = memo(() => {
         <a href="https://twitter.com/L3_Summit" target={"_blank"}>
           <IconItem className={"twitter"} src={twitter} alt="twitter" />
         </a>
-        <Button href={"https://lu.ma/l3zk-ethcc"} target={"_blank"}>
+        <a href="https://www.youtube.com/@l3summit" target={"_blank"}>
+          <IconItem className={"twitter"} src={youtube} alt="youtube" />
+        </a>
+        <Button href={"https://lu.ma/l3summit-sg"} target={"_blank"}>
           Join {!isMobile && "Now"}
         </Button>
         <Button className={"play"} href={"/gallery"}>
