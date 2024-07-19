@@ -15,6 +15,8 @@ import Partners from "@/components/Homepage/Agenda/partners";
 import dubaiBanner from "@/assets/homepage/agenda/partners/DubaiBanner/Dubai_banner.webp";
 import dubaiBanner_mobile from "@/assets/homepage/agenda/partners/DubaiBanner/Dubai_banner_mobile.webp";
 
+import brusselsBanner from "@/assets/homepage/agenda/partners/BresselsBanner/Brussels_banner.png";
+
 import Image from "next/image";
 import { useResize } from "@/hooks/useResize";
 import Tabs from "@/components/Homepage/Agenda/tabs";
@@ -83,6 +85,21 @@ const PartnersImg = ({ size }: { size: number }) => {
   );
 };
 
+const BrusselsBanner = styled(Image)`
+  margin-top: 100px;
+  max-width: 1175px;
+  width: 100%;
+  height: auto;
+`;
+
+const PartnersBrussels = () => {
+  return (
+    <div>
+      <BrusselsBanner priority src={brusselsBanner} alt="" />
+    </div>
+  );
+};
+
 const Index = () => {
   const [tabs] = useState<Tab[]>([
     "Istanbul",
@@ -108,6 +125,7 @@ const Index = () => {
     }
   };
   const partners = (val: Tab) => {
+    console.log("partners", val);
     switch (val) {
       case "EthDenver":
         return <Partners data={partnerEthDenver} />;
@@ -116,7 +134,7 @@ const Index = () => {
       case "Dubai":
         return <PartnersImg size={width} />;
       case "Brussels":
-        null;
+        return <PartnersBrussels />;
     }
   };
   return (

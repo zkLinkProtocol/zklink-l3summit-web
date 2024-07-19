@@ -93,6 +93,9 @@ const Plane = styled(FlexCenter)`
     background-color: #51cfff;
     border-radius: 50%;
     opacity: 1;
+    &.Brussels {
+      background-color: #a748e0;
+    }
   }
 `;
 
@@ -156,7 +159,11 @@ const Index = () => {
           }}
           className={"plane"}
         >
-          <Plane className={!isAnimating && lo.name === name ? "bg" : ""}>
+          <Plane
+            className={`${!isAnimating && lo.name === name ? "bg" : ""} ${
+              lo.name
+            }`}
+          >
             <Dot
               style={{
                 transform: `rotate(${isAnimating ? lo.rotate : 0}deg)`,
