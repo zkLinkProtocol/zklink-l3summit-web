@@ -40,6 +40,17 @@ const DescWrap = styled.div`
   border-right: 0 transparent;
   border-bottom: 0 transparent;
 
+  &.Brussels {
+    border: 7px solid #a748e0;
+    border-left: 3px solid #a748e0;
+    border-right: 0 transparent;
+    border-bottom: 0 transparent;
+
+    &::before {
+      background-color: #a748e0;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -74,6 +85,9 @@ const TextL = styled.div`
   margin-right: 15px;
   color: #51cfff;
   font-size: 28px;
+  &.Brussels {
+    color: #a748e0;
+  }
 `;
 
 const TextR = styled.div`
@@ -85,11 +99,11 @@ const Index: FC<{ type: IntroduceTitle }> = ({ type }) => {
   return (
     <Wrap>
       <Title>{introduceTitle[type]}</Title>
-      <DescWrap>
+      <DescWrap className={type}>
         <Desc>
           {introduceData[type].map((item, idx) => (
             <Text key={idx}>
-              <TextL>{item.textL}</TextL>
+              <TextL className={type}>{item.textL}</TextL>
               <TextR>{item.textR}</TextR>
             </Text>
           ))}
