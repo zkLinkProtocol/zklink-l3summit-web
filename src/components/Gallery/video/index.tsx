@@ -24,6 +24,7 @@ const Video = styled.video`
 const istanbul = "/gallery/istanbul.mp4";
 const ethDenver = "/gallery/denver.mp4";
 const dubai = "/gallery/dubai.mp4";
+const brussels = "/gallery/brussels.mp4";
 
 const Index: FC<{ type: Tab }> = ({ type }) => {
   const videoSource =
@@ -33,7 +34,7 @@ const Index: FC<{ type: Tab }> = ({ type }) => {
       ? ethDenver
       : type === "Dubai"
       ? dubai
-      : "";
+      : brussels;
   return (
     videoSource && (
       <Wrap>
