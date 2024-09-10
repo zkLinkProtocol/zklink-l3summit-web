@@ -9,6 +9,9 @@ import Dubai_3 from "@/assets/homepage/agenda/Dubai_3.webp";
 import Brussels_1 from "@/assets/homepage/agenda/Brussels_1.jpg";
 import Brussels_2 from "@/assets/homepage/agenda/Brussels_2.jpg";
 import Brussels_3 from "@/assets/homepage/agenda/Brussels_3.jpg";
+import Singapore_1 from "@/assets/homepage/agenda/Singapore_1.jpg";
+import Singapore_2 from "@/assets/homepage/agenda/Singapore_2.jpg";
+import Singapore_3 from "@/assets/homepage/agenda/Brussels_3.jpg";
 
 //Partners
 import arpa from "@/assets/homepage/agenda/partners/ETHDenver/arpa.png";
@@ -420,7 +423,7 @@ export const strokeList3: StrokeItem[] = [
 
 export const strokeList4: StrokeItem[] = [
   {
-    time: "18:00 pm",
+    time: "17:00 pm",
     infoTopText: "",
     infoCenterText: "Reception & Networking",
     infoBottomLText: "",
@@ -429,9 +432,10 @@ export const strokeList4: StrokeItem[] = [
     infoCenterClass: "colorWhite",
   },
   {
-    time: "19:30 pm",
+    time: "18:00 pm",
     infoTopText: "Fireside Chat",
-    infoCenterText: "Fireside Chat with ZKsync: The ZK Stack Takeover",
+    infoCenterText:
+      "Blockchain Layers & The Technology Underneath: Layer 3s, the Modular Stack, & ZK Technology",
     infoBottomLText: "zkLink Matter Labs",
     infoBottomRText: "",
     infoClass: "",
@@ -439,7 +443,7 @@ export const strokeList4: StrokeItem[] = [
     infoCenterClass: "",
   },
   {
-    time: "20:00 pm",
+    time: "18300 pm",
     infoTopText: "Panel",
     infoCenterText:
       "Discussing ZK Use Cases: Scaling Ethereum With ZK Rollups, Infrastructure & Interoperability, and Considerations For DApp Development",
@@ -471,6 +475,49 @@ export const strokeList4: StrokeItem[] = [
   },
 ];
 
+export const strokeList5: StrokeItem[] = [
+  {
+    time: "17:00 pm",
+    infoTopText: "",
+    infoCenterText: "Reception & Networking",
+    infoBottomLText: "",
+    infoClass: "bgBlack",
+    infoTopClass: "",
+    infoCenterClass: "colorWhite",
+  },
+  {
+    time: "18:00 pm",
+    infoTopText: "",
+    infoCenterText:
+      "Blockchain Layers & The Technology Underneath: Layer 3s, the Modular Stack, & ZK Technology",
+    infoBottomLText: "",
+    infoBottomRText: "",
+    infoClass: "",
+    infoTopClass: "",
+    infoCenterClass: "",
+  },
+  {
+    time: "18:30 pm",
+    infoTopText: "",
+    infoCenterText:
+      "Infrastructure & Applications : The Rise of Popular DeFi Segments in 2024",
+    infoBottomLText: "",
+    infoBottomRText: "",
+    infoClass: "",
+    infoTopClass: "",
+    infoCenterClass: "",
+  },
+  {
+    time: "19:00 pm",
+    infoTopText: "",
+    infoCenterText: "Networking",
+    infoBottomLText: "",
+    infoClass: "bgOrange",
+    infoTopClass: "",
+    infoCenterClass: "colorWhite",
+  },
+];
+
 const istanbulUrl =
   "https://www.google.com/maps/place/Nippon+Hotel/@41.0403927,28.9850207,17z/data=!3m1!4b1!4m9!3m8!1s0x14cab78c9ef8546b:0x90adf79b5bd868a9!5m2!4m1!1i2!8m2!3d41.0403927!4d28.9850207!16s%2Fg%2F1twzz0l_?hl=en&entry=ttu";
 const denverUrl =
@@ -479,6 +526,9 @@ const DubaiUrl = "https://maps.app.goo.gl/qBJ8cesE44BQUJea6";
 
 const BrusselsUrl =
   "https://www.google.com/maps/dir//BREWDOG+BRUSSELS+GOOGLE+MAP/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47c3c47fc6b026d3:0xf3e707533c2c8771?sa=X&ved=1t:3061&ictx=111&cshid=1721028942126926";
+
+const SingaporeUrl =
+  "https://www.google.com/maps?ll=1.294104,103.855925&z=16&t=m&hl=en&gl=PH&mapclient=embed&cid=5207548893122592243";
 
 export const locationData = [
   {
@@ -582,6 +632,30 @@ export const locationData = [
     ],
     right: [Brussels_1, Brussels_2, Brussels_3],
   },
+  {
+    type: "Singapore",
+    left: [
+      {
+        title: "Little Island At South Beach Singapore",
+        text: `No-nonsense chain bar specialising in the Scottish brewery's craft beers, with regular guest brews.`,
+        urlName: "",
+        url: "",
+      },
+      {
+        title: "",
+        text: `At Little Island Brewing Co (LIBC), the journey began in 2015 with a vision of crafting everything the slow way – with dedication, passion, and love. They believe in the art of craftsmanship, where every detail matters. It’s not just about the end product; it’s about the journey of creating an exceptional taste experience.`,
+        urlName: "",
+        url: "",
+      },
+      {
+        title: "",
+        text: "",
+        urlName: "Little Island - Singapore",
+        url: SingaporeUrl,
+      },
+    ],
+    right: [Singapore_1, Singapore_2, Singapore_3],
+  },
 ];
 
 export type Partner = {
@@ -639,7 +713,7 @@ export const partnerDubai: Partner = {
   ],
 };
 
-export type Tab = "Istanbul" | "EthDenver" | "Dubai" | "Brussels";
+export type Tab = "Istanbul" | "EthDenver" | "Dubai" | "Brussels" | "Singapore";
 
 export const tabData: {
   tag: Tab;
@@ -665,5 +739,10 @@ export const tabData: {
     tag: "Brussels",
     date: "10.07.2024",
     text: "Brussels",
+  },
+  {
+    tag: "Singapore",
+    date: "16.09.2024",
+    text: "Singapore",
   },
 ];

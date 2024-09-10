@@ -70,6 +70,12 @@ const InfoWrap = styled.div`
   &.brussels {
     top: 194px;
     left: 600px;
+    /* animation: 1.2s linear 0s infinite alternate none running ${Opacity}; */
+  }
+
+  &.singapore {
+    top: 348px;
+    left: 936px;
     animation: 1.2s linear 0s infinite alternate none running ${Opacity};
   }
 
@@ -150,6 +156,9 @@ const Index = () => {
           <Dot src={dotIcon} alt={""} />
         </InfoWrap>
         <InfoWrap className={"brussels"}>
+          <Dot src={dotIcon} alt={""} />
+        </InfoWrap>
+        <InfoWrap className={"singapore"}>
           <Dot src={dotIcon} alt={""} />
         </InfoWrap>
         <InfoWrap
