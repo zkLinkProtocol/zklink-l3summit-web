@@ -1,9 +1,15 @@
-export type IntroduceTitle = "EthDenver" | "Istanbul" | "Dubai" | "Brussels";
+export type IntroduceTitle =
+  | "EthDenver"
+  | "Istanbul"
+  | "Dubai"
+  | "Brussels"
+  | "Singapore";
 export const introduceTitle = {
   EthDenver: "ETHDenver",
   Istanbul: "DevConnect Istanbul",
   Dubai: "Token2049 Dubai",
   Brussels: "EthCC Brussels",
+  Singapore: "Singapore",
 };
 export const introduceData = {
   EthDenver: [
@@ -62,12 +68,26 @@ export const introduceData = {
       textR: "Media Partners",
     },
   ],
+  Singapore: [
+    // {
+    //   textL: "400+",
+    //   textR: "Particiants",
+    // },
+    {
+      textL: "9",
+      textR: "Speakers",
+    },
+    {
+      textL: "8",
+      textR: "Media Partners",
+    },
+  ],
 };
 
 export const placeData = [
   {
     type: "Istanbul",
-    tText: "16 NOV 2023",
+    tText: "16 Nov 2023",
     cText: "DevConnect Istanbul",
     bText: "Istanbul",
   },
@@ -79,7 +99,7 @@ export const placeData = [
   },
   {
     type: "Dubai",
-    tText: "16 April 2024",
+    tText: "16 Apr 2024",
     cText: "Token2049 Dubai",
     bText: "Dubai",
   },
@@ -88,6 +108,12 @@ export const placeData = [
     tText: "10 Jul 2024",
     cText: "EthCC Brussels",
     bText: "Brussels",
+  },
+  {
+    type: "Singapore",
+    tText: "16 Sep 2024",
+    cText: "Token2049 Singapore",
+    bText: "Singapore",
   },
 ];
 
@@ -101,7 +127,7 @@ export const locations: {
     name: "Istanbul",
     x: 0,
     y: 0,
-    rotate: 20,
+    rotate: -150,
   },
   {
     name: "EthDenver",
@@ -120,5 +146,11 @@ export const locations: {
     x: -105,
     y: -28,
     rotate: -145,
+  },
+  {
+    name: "Singapore",
+    x: 232,
+    y: 126,
+    rotate: 25,
   },
 ];

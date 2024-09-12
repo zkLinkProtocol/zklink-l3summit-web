@@ -9,6 +9,7 @@ import {
   strokeList2,
   strokeList3,
   strokeList4,
+  strokeList5,
   Tab,
 } from "@/components/Homepage/Agenda/data";
 import Partners from "@/components/Homepage/Agenda/partners";
@@ -16,6 +17,7 @@ import dubaiBanner from "@/assets/homepage/agenda/partners/DubaiBanner/Dubai_ban
 import dubaiBanner_mobile from "@/assets/homepage/agenda/partners/DubaiBanner/Dubai_banner_mobile.webp";
 
 import brusselsBanner from "@/assets/homepage/agenda/partners/BresselsBanner/Brussels_banner.png";
+import singaporeBanner from "@/assets/homepage/agenda/partners/SingaporeBanner/Singapore_banner.png";
 
 import Image from "next/image";
 import { useResize } from "@/hooks/useResize";
@@ -100,12 +102,28 @@ const PartnersBrussels = () => {
   );
 };
 
+const SingaporeBanner = styled(Image)`
+  margin-top: 100px;
+  max-width: 1175px;
+  width: 100%;
+  height: auto;
+`;
+
+const PartnersSingapore = () => {
+  return (
+    <div>
+      <SingaporeBanner priority src={singaporeBanner} alt="" />
+    </div>
+  );
+};
+
 const Index = () => {
   const [tabs] = useState<Tab[]>([
     "Istanbul",
     "EthDenver",
     "Dubai",
     "Brussels",
+    "Singapore",
   ]);
   const [tab, setTab] = useState<Tab>(tabs[tabs.length - 1]);
   const { width } = useResize();
@@ -122,6 +140,8 @@ const Index = () => {
         return { name: "Token2049", data: strokeList3 };
       case "Brussels":
         return { name: "EthCC", data: strokeList4 };
+      case "Singapore":
+        return { name: "TOKEN2049", data: strokeList5 };
     }
   };
   const partners = (val: Tab) => {
@@ -135,6 +155,8 @@ const Index = () => {
         return <PartnersImg size={width} />;
       case "Brussels":
         return <PartnersBrussels />;
+      case "Singapore":
+        return <PartnersSingapore />;
     }
   };
   return (

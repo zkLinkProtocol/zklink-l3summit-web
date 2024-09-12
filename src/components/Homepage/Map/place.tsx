@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 
 const Wrap = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   max-width: 1272px;
   margin: 318px auto 0;
 
