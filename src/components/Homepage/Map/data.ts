@@ -69,16 +69,16 @@ export const introduceData = {
     },
   ],
   Singapore: [
+    // {
+    //   textL: "400+",
+    //   textR: "Particiants",
+    // },
     {
-      textL: "400+",
-      textR: "Particiants",
-    },
-    {
-      textL: "15",
+      textL: "9",
       textR: "Speakers",
     },
     {
-      textL: "6",
+      textL: "8",
       textR: "Media Partners",
     },
   ],
