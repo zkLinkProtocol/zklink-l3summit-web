@@ -32,10 +32,19 @@ function imagesContextBrussels(): any {
   );
 }
 
+function imagesContextSingapore(): any {
+  return (require as any).context(
+    "../../../assets/gallery/singapore",
+    false, // Whether to recursively search subdirectories
+    /\.(jpg|jpeg|png|gif|svg)$/
+  );
+}
+
 const imagesContextIstanbulKeys = imagesContextIstanbul();
 const imagesContextDenverKeys = imagesContextDenver();
 const imagesContextDubaiKeys = imagesContextDubai();
 const imagesContextBrusselsKeys = imagesContextBrussels();
+const imagesContextSingaporeKeys = imagesContextSingapore();
 
 const imagesIstanbul = imagesContextIstanbulKeys
   .keys()
@@ -56,7 +65,12 @@ const imagesBrussels = imagesContextBrusselsKeys
   .keys()
   .map((key: string) => imagesContextBrusselsKeys(key));
 
+  const imagesSingapore = imagesContextSingaporeKeys
+  .keys()
+  .map((key: string) => imagesContextSingaporeKeys(key));
+
 export const istanbulIcons: StaticImageData[] = [...imagesIstanbul];
 export const denverIcons: StaticImageData[] = [...imagesDenver];
 export const dubaiIcons: StaticImageData[] = [...imagesDubai];
 export const brusselsIcons: StaticImageData[] = [...imagesBrussels];
+export const singaporeIcons: StaticImageData[] = [...imagesSingapore];

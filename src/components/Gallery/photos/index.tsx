@@ -2,7 +2,13 @@ import React, { FC, useMemo, useState } from "react";
 import styled from "styled-components";
 import Image, { StaticImageData } from "next/image";
 import { FlexCenter } from "@/styles";
-import { dubaiIcons, denverIcons, istanbulIcons, brusselsIcons } from "./data";
+import {
+  dubaiIcons,
+  denverIcons,
+  istanbulIcons,
+  brusselsIcons,
+  singaporeIcons,
+} from "./data";
 import { Dialog } from "@material-ui/core";
 import { Tab } from "@/components/Homepage/Agenda/data";
 
@@ -79,8 +85,10 @@ const Index: FC<{ type: Tab }> = ({ type }) => {
       return denverIcons;
     } else if (type === "Dubai") {
       return dubaiIcons;
+    } else if (type === "Brussels") {
+      return brusselsIcons;
     } else {
-      return brusselsIcons
+      return singaporeIcons;
     }
   }, [type]);
   return (
